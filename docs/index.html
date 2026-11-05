@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Доступность сайтов</title>
+<style>
+  :root{
+    --surface:#fcfcfb; --card:#ffffff; --ink:#1b1b1a; --ink-2:#55554f; --ink-3:#8a8a82;
+    --line:#e6e6e1; --good:#0ca30c; --warn:#fab219; --crit:#d03b3b; --none:#d9d9d3;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--surface);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:980px;margin:0 auto;padding:28px 18px 48px}
+  header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;margin-bottom:18px}
+  h1{font-size:22px;margin:0;font-weight:650}
+  .meta{color:var(--ink-2);font-size:14px}
+  .meta b{color:var(--ink);font-weight:600}
+  .summary{display:flex;gap:10px;align-items:center;margin:0 0 20px;padding:12px 16px;border-radius:10px;background:var(--card);border:1px solid var(--line);font-size:16px}
+  .summary .dot{width:12px;height:12px;border-radius:50%;flex:none}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(440px,1fr));gap:14px}
+  @media (max-width:520px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px 14px}
+  .top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+  .site{font-size:18px;font-weight:650}
+  .site a{color:inherit;text-decoration:none}
+  .site a:hover{text-decoration:underline}
+  .badge{display:inline-flex;align-items:center;gap:7px;padding:4px 10px;border-radius:999px;font-size:13.5px;font-weight:600;border:1px solid transparent;white-space:nowrap}
+  .badge .ico{font-size:12px;line-height:1}
+  .up{color:#006300;background:#e8f6e8;border-color:#bfe5bf}
+  .slow{color:#6b4a00;background:#fff4d6;border-color:#f4dd9a}
+  .down{color:#8c1d1d;background:#fbe7e7;border-color:#f0bcbc}
+  .unknown{color:var(--ink-2);background:#f1f1ee;border-color:var(--line)}
+  .kv{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0 12px}
+  .kv div{background:#f6f6f3;border-radius:8px;padding:8px 10px}
+  .kv .l{font-size:12px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.03em}
+  .kv .v{font-size:17px;font-weight:650;margin-top:2px;font-variant-numeric:tabular-nums}
+  .kv .v small{font-size:12px;color:var(--ink-3);font-weight:500}
+  .strip{display:grid;grid-template-columns:repeat(48,1fr);gap:2px;height:26px}
+  .strip i{display:block;border-radius:3px;background:var(--none);cursor:default}
+  .strip i.up{background:var(--good)} .strip i.slow{background:var(--warn)} .strip i.down{background:var(--crit)}
+  .strip i:hover{outline:2px solid var(--ink);outline-offset:1px}
+  .axis{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-3);margin-top:4px}
+  .inc{margin:12px 0 0;padding:0;list-style:none;font-size:13.5px;color:var(--ink-2)}
+  .inc li{padding:4px 0;border-top:1px dashed var(--line)}
+  .inc li b{color:var(--ink);font-weight:600}
+  .inc li.open b{color:#8c1d1d}
+  details summary{cursor:pointer;color:var(--ink-2);font-size:13.5px;margin-top:10px}
+  footer{margin-top:28px;color:var(--ink-3);font-size:13px;line-height:1.5}
+  footer code{background:#f1f1ee;padding:1px 5px;border-radius:4px;font-size:12px}
+  #err{display:none;background:#fbe7e7;color:#8c1d1d;padding:12px 16px;border-radius:10px;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Доступность сайтов</h1>
+    <div class="meta">Проверено: <b id="gen">—</b> · следующая проверка <b id="next">—</b></div>
+  </header>
+  <div id="err"></div>
+  <div class="summary" id="summary"><span class="dot" style="background:var(--none)"></span><span>Загрузка…</span></div>
+  <div class="grid" id="grid"></div>
+  <footer>
+    Проверка каждые 30 минут из дата-центра GitHub (США, Ubuntu): запрос главной страницы как из браузера Chrome с cookie
+    <code>beget=begetok</code>. <b>Работает</b> — ответ 200 и полный HTML (от 5 КБ). <b>Медленно</b> — ответ дольше 5 с.
+    <b>Недоступен</b> — любой другой код, таймаут 30 с, заглушка в 274 байта или страница ошибки DDoS-Guard;
+    перед тем как записать «недоступен», проверка повторяется через 15 с. Полоска — последние сутки (48 проверок),
+    наведите курсор на ячейку. Время — московское. История хранится 90 дней.
+  </footer>
+</div>
+<script>
+const MSK = {timeZone:'Europe/Moscow'};
+const fmtDT = s => new Date(s).toLocaleString('ru-RU',{...MSK, day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+const fmtT  = s => new Date(s).toLocaleString('ru-RU',{...MSK, hour:'2-digit',minute:'2-digit'});
+const LABEL = {up:['●','Работает'], slow:['▲','Медленно'], down:['✕','Недоступен'], unknown:['○','Нет данных']};
+const pct = v => v==null ? '—' : (v % 1 ? v.toFixed(1) : v.toFixed(0)) + '<small>%</small>';
+const ms  = v => v==null ? '—' : (v>=1000 ? (v/1000).toFixed(1)+'<small> с</small>' : v+'<small> мс</small>');
+const esc = s => String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function dur(a,b){const m=Math.round((new Date(b)-new Date(a))/60000)+30; return m<60?`${m} мин`:(m<1440?`${Math.floor(m/60)} ч ${m%60} мин`:`${Math.floor(m/1440)} д ${Math.floor(m%1440/60)} ч`)}
+
+function render(d){
+  document.getElementById('gen').textContent = fmtDT(d.generated);
+  const nextAt = new Date(new Date(d.generated).getTime() + d.interval_min*60000);
+  const left = Math.round((nextAt - Date.now())/60000);
+  document.getElementById('next').textContent = left>0 ? `через ~${left} мин (${fmtT(nextAt)})` : 'вот-вот';
+
+  const down = d.sites.filter(s=>s.state==='down').length, slow = d.sites.filter(s=>s.state==='slow').length;
+  const sum = document.getElementById('summary');
+  if(down){sum.innerHTML=`<span class="dot" style="background:var(--crit)"></span><span>✕ Недоступно: <b>${d.sites.filter(s=>s.state==='down').map(s=>s.name).join(', ')}</b></span>`}
+  else if(slow){sum.innerHTML=`<span class="dot" style="background:var(--warn)"></span><span>▲ Все сайты отвечают, медленно: <b>${d.sites.filter(s=>s.state==='slow').map(s=>s.name).join(', ')}</b></span>`}
+  else {sum.innerHTML=`<span class="dot" style="background:var(--good)"></span><span>● Все ${d.sites.length} сайта работают</span>`}
+
+  const grid = document.getElementById('grid'); grid.innerHTML='';
+  for(const s of d.sites){
+    const [ico,lab] = LABEL[s.state]||LABEL.unknown;
+    const strip = s.strip.slice(); while(strip.length<48) strip.unshift(null);
+    const cells = strip.map(c=>{
+      if(!c) return '<i title="нет данных"></i>';
+      const [t,st,msv,code,err]=c; const [i2,l2]=LABEL[st]||LABEL.unknown;
+      return `<i class="${st}" title="${esc(fmtDT(t))} — ${l2}, код ${code}, ${msv} мс${err?' — '+esc(err):''}"></i>`;
+    }).join('');
+    const first = strip.find(Boolean), last = strip[strip.length-1];
+    const inc = s.incidents.length
+      ? `<details><summary>Сбои за 90 дней: ${s.incidents.length}${s.incidents.length>=10?'+':''}</summary><ul class="inc">` +
+        s.incidents.map(i=>`<li class="${i.resolved?'':'open'}"><b>${esc(fmtDT(i.start))}</b> · ${i.resolved?dur(i.start,i.end):'продолжается'} · ${i.checks} пров. · ${esc(i.err||'')}</li>`).join('') + '</ul></details>'
+      : `<div class="inc" style="margin-top:10px">Сбоев за 90 дней не было</div>`;
+    const lastErr = s.last && s.state==='down' && s.last.err ? `<div class="inc" style="margin-top:6px">Последняя ошибка: ${esc(s.last.err)}</div>` : '';
+    grid.insertAdjacentHTML('beforeend', `
+      <section class="card">
+        <div class="top"><div class="site"><a href="${s.url}" target="_blank" rel="noopener">${s.name}</a></div>
+          <span class="badge ${s.state}"><span class="ico">${ico}</span>${lab}</span></div>
+        <div class="kv">
+          <div><div class="l">Ответ</div><div class="v">${s.last ? ms(s.last.ms) : '—'}</div></div>
+          <div><div class="l">24 часа</div><div class="v">${pct(s.uptime_24h)}</div></div>
+          <div><div class="l">7 дней</div><div class="v">${pct(s.uptime_7d)}</div></div>
+          <div><div class="l">30 дней</div><div class="v">${pct(s.uptime_30d)}</div></div>
+        </div>
+        <div class="strip">${cells}</div>
+        <div class="axis"><span>${first?fmtDT(first[0]):''}</span><span>${last?fmtDT(last[0]):''}</span></div>
+        ${lastErr}${inc}
+      </section>`);
+  }
+}
+async function load(){
+  try{
+    const r = await fetch('data/status.json?_='+Date.now(), {cache:'no-store'});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    render(await r.json()); document.getElementById('err').style.display='none';
+  }catch(e){const el=document.getElementById('err'); el.style.display='block'; el.textContent='Не удалось загрузить данные: '+e.message;}
+}
+load(); setInterval(load, 5*60*1000);
+</script>
+</body>
+</html>
