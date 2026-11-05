@@ -1,0 +1,163 @@
+{
+ "generated": "2026-11-05T05:36:34Z",
+ "interval_min": 30,
+ "rules": {
+  "min_bytes": 5000,
+  "slow_ms": 5000,
+  "timeout_s": 30
+ },
+ "sites": [
+  {
+   "id": "centrfenix",
+   "name": "centrfenix.ru",
+   "url": "https://centrfenix.ru/",
+   "state": "down",
+   "last": {
+    "site": "centrfenix",
+    "state": "down",
+    "attempts": 2,
+    "code": 502,
+    "ms": 14818,
+    "bytes": 585,
+    "err": "HTTP 502",
+    "t": "2026-11-05T05:36:34Z"
+   },
+   "uptime_24h": 0.0,
+   "uptime_7d": 0.0,
+   "uptime_30d": 0.0,
+   "avg_ms_24h": null,
+   "strip": [
+    [
+     "2026-11-05T05:36:34Z",
+     "down",
+     14818,
+     502,
+     "HTTP 502"
+    ]
+   ],
+   "incidents": [
+    {
+     "start": "2026-11-05T05:36:34Z",
+     "end": "2026-11-05T05:36:34Z",
+     "checks": 1,
+     "err": "HTTP 502",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "fenix-siz",
+   "name": "fenix-siz.ru",
+   "url": "https://fenix-siz.ru/",
+   "state": "down",
+   "last": {
+    "site": "fenix-siz",
+    "state": "down",
+    "attempts": 2,
+    "code": 502,
+    "ms": 14881,
+    "bytes": 585,
+    "err": "HTTP 502",
+    "t": "2026-11-05T05:36:34Z"
+   },
+   "uptime_24h": 0.0,
+   "uptime_7d": 0.0,
+   "uptime_30d": 0.0,
+   "avg_ms_24h": null,
+   "strip": [
+    [
+     "2026-11-05T05:36:34Z",
+     "down",
+     14881,
+     502,
+     "HTTP 502"
+    ]
+   ],
+   "incidents": [
+    {
+     "start": "2026-11-05T05:36:34Z",
+     "end": "2026-11-05T05:36:34Z",
+     "checks": 1,
+     "err": "HTTP 502",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "ncarus",
+   "name": "ncarus.ru",
+   "url": "https://ncarus.ru/",
+   "state": "down",
+   "last": {
+    "site": "ncarus",
+    "state": "down",
+    "attempts": 2,
+    "code": 0,
+    "ms": 30395,
+    "bytes": 0,
+    "err": "таймаут 30 с",
+    "t": "2026-11-05T05:36:34Z"
+   },
+   "uptime_24h": 0.0,
+   "uptime_7d": 0.0,
+   "uptime_30d": 0.0,
+   "avg_ms_24h": null,
+   "strip": [
+    [
+     "2026-11-05T05:36:34Z",
+     "down",
+     30395,
+     0,
+     "таймаут 30 с"
+    ]
+   ],
+   "incidents": [
+    {
+     "start": "2026-11-05T05:36:34Z",
+     "end": "2026-11-05T05:36:34Z",
+     "checks": 1,
+     "err": "таймаут 30 с",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "csb-fenix",
+   "name": "csb-fenix.ru",
+   "url": "https://csb-fenix.ru/",
+   "state": "down",
+   "last": {
+    "site": "csb-fenix",
+    "state": "down",
+    "attempts": 2,
+    "code": 0,
+    "ms": 30413,
+    "bytes": 0,
+    "err": "таймаут 30 с",
+    "t": "2026-11-05T05:36:34Z"
+   },
+   "uptime_24h": 0.0,
+   "uptime_7d": 0.0,
+   "uptime_30d": 0.0,
+   "avg_ms_24h": null,
+   "strip": [
+    [
+     "2026-11-05T05:36:34Z",
+     "down",
+     30413,
+     0,
+     "таймаут 30 с"
+    ]
+   ],
+   "incidents": [
+    {
+     "start": "2026-11-05T05:36:34Z",
+     "end": "2026-11-05T05:36:34Z",
+     "checks": 1,
+     "err": "таймаут 30 с",
+     "resolved": false
+    }
+   ]
+  }
+ ]
+}
