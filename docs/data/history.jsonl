@@ -212,3 +212,9 @@
 {"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 30489, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-06T20:34:22Z"}
 {"site": "fenix-siz", "state": "up", "attempts": 1, "code": 200, "ms": 948, "bytes": 11886, "err": "", "t": "2026-11-06T20:34:22Z"}
 {"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 30343, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-06T20:34:22Z"}
+{"site": "centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 2331, "bytes": 0, "err": "<urlopen error [Errno 104] Connection reset by peer>", "t": "2026-11-06T21:00:00Z"}
+{"site": "check-centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 313, "bytes": 0, "err": "<urlopen error [Errno -2] Name or service not known>", "t": "2026-11-06T21:00:00Z"}
+{"site": "check-fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 30333, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-06T21:00:00Z"}
+{"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 30030, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-06T21:00:00Z"}
+{"site": "fenix-siz", "state": "down", "attempts": 2, "code": 502, "ms": 734, "bytes": 585, "err": "HTTP 502", "t": "2026-11-06T21:00:00Z"}
+{"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 30593, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-06T21:00:00Z"}
