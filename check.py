@@ -195,7 +195,7 @@ def build_status(rows: list, now: datetime) -> dict:
 #   TELEGRAM_CHAT_ID   — id личного чата или группы (у группы отрицательный)
 # Без них уведомления молча отключены. Пишем только при смене состояния:
 # «работал → упал» и «лежал → поднялся»; «медленно» считается «работает».
-MSK = timezone(timedelta(hours=3))
+LOCAL_TZ = timezone(timedelta(hours=5))  # UTC+5, Москва +2 ч — часовой пояс пользователя
 
 
 def tg_send(text: str) -> None:
@@ -213,8 +213,8 @@ def tg_send(text: str) -> None:
         print(f"telegram: не отправлено — {str(e)[:120]}", flush=True)
 
 
-def fmt_msk(t: str) -> str:
-    return parse_t(t).astimezone(MSK).strftime("%d.%m %H:%M")
+def fmt_local(t: str) -> str:
+    return parse_t(t).astimezone(LOCAL_TZ).strftime("%d.%m %H:%M")
 
 
 def fmt_dur(seconds: int) -> str:
@@ -247,7 +247,7 @@ def notify_changes(prev_rows: list, results: list) -> None:
         name = names.get(r["site"], r["site"])
         if now_down:
             why = r["err"] or f"код {r['code']}"
-            lines.append(f"🔴 {name} недоступен с {fmt_msk(r['t'])} МСК — {why}")
+            lines.append(f"🔴 {name} недоступен с {fmt_local(r['t'])} (UTC+5) — {why}")
         else:
             start = down_since.get(r["site"], last[r["site"]]["t"])
             dur = int((parse_t(r["t"]) - parse_t(start)).total_seconds())

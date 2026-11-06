@@ -66,11 +66,11 @@
     <code>beget=begetok</code>. <b>Работает</b> — ответ 200 и полный HTML (от 5 КБ). <b>Медленно</b> — ответ дольше 5 с.
     <b>Недоступен</b> — любой другой код, таймаут 30 с, заглушка в 274 байта или страница ошибки DDoS-Guard;
     перед тем как записать «недоступен», проверка повторяется через 15 с. Полоска — последние сутки (48 проверок),
-    наведите курсор на ячейку. Время — московское. История хранится 90 дней.
+    наведите курсор на ячейку. Время — местное, UTC+5 (Москва +2 ч). История хранится 90 дней.
   </footer>
 </div>
 <script>
-const MSK = {timeZone:'Europe/Moscow'};
+const MSK = {timeZone:'Asia/Yekaterinburg'}; // UTC+5, Москва +2 ч — часовой пояс пользователя
 const fmtDT = s => new Date(s).toLocaleString('ru-RU',{...MSK, day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
 const fmtT  = s => new Date(s).toLocaleString('ru-RU',{...MSK, hour:'2-digit',minute:'2-digit'});
 const LABEL = {up:['●','Работает'], slow:['▲','Медленно'], down:['✕','Недоступен'], unknown:['○','Нет данных']};
