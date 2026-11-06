@@ -14,11 +14,13 @@
   docs/data/status.json   — сводка для табло (docs/index.html)
 """
 import json
+import os
 import sys
 import time
 import urllib.request
 import urllib.error
 import ssl
+import urllib.parse
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -187,6 +189,73 @@ def build_status(rows: list, now: datetime) -> dict:
     }
 
 
+# ---------- Telegram ----------
+# Токен и чат берутся из переменных окружения (в GitHub — Secrets репозитория):
+#   TELEGRAM_BOT_TOKEN — токен от @BotFather
+#   TELEGRAM_CHAT_ID   — id личного чата или группы (у группы отрицательный)
+# Без них уведомления молча отключены. Пишем только при смене состояния:
+# «работал → упал» и «лежал → поднялся»; «медленно» считается «работает».
+MSK = timezone(timedelta(hours=3))
+
+
+def tg_send(text: str) -> None:
+    token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+    chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
+    if not token or not chat:
+        return
+    data = urllib.parse.urlencode({"chat_id": chat, "text": text, "disable_web_page_preview": "1"}).encode()
+    req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage", data=data)
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            r.read()
+        print("telegram: отправлено", flush=True)
+    except Exception as e:  # уведомление не должно ронять проверку
+        print(f"telegram: не отправлено — {str(e)[:120]}", flush=True)
+
+
+def fmt_msk(t: str) -> str:
+    return parse_t(t).astimezone(MSK).strftime("%d.%m %H:%M")
+
+
+def fmt_dur(seconds: int) -> str:
+    m = seconds // 60
+    if m < 60:
+        return f"{m} мин"
+    h, m = divmod(m, 60)
+    return f"{h} ч {m:02d} мин"
+
+
+def notify_changes(prev_rows: list, results: list) -> None:
+    """Сравнивает состояние каждого сайта с прошлой проверкой и шлёт в Telegram."""
+    last = {}
+    for r in prev_rows:  # отсортированы по времени → останется последняя
+        last[r["site"]] = r
+    down_since = {}
+    for r in prev_rows:  # начало текущего падения: первая down-проверка подряд
+        if r["state"] == "down":
+            down_since.setdefault(r["site"], r["t"])
+        else:
+            down_since.pop(r["site"], None)
+    names = {s["id"]: s["name"] for s in SITES}
+    lines = []
+    for r in results:
+        was = last.get(r["site"], {}).get("state")
+        now_down = r["state"] == "down"
+        was_down = was == "down"
+        if was is None or now_down == was_down:
+            continue
+        name = names.get(r["site"], r["site"])
+        if now_down:
+            why = r["err"] or f"код {r['code']}"
+            lines.append(f"🔴 {name} недоступен с {fmt_msk(r['t'])} МСК — {why}")
+        else:
+            start = down_since.get(r["site"], last[r["site"]]["t"])
+            dur = int((parse_t(r["t"]) - parse_t(start)).total_seconds())
+            lines.append(f"🟢 {name} снова работает ({r['ms']} мс), простой {fmt_dur(dur)}")
+    if lines:
+        tg_send("\n".join(lines) + "\n\nТабло: https://parctron-hub.github.io/site-uptime/")
+
+
 def main() -> int:
     now = datetime.now(timezone.utc).replace(microsecond=0)
     stamp = now.isoformat(timespec="seconds").replace("+00:00", "Z")
@@ -198,7 +267,11 @@ def main() -> int:
         print(f"{s['name']:16} {r['state']:5} code={r['code']} {r['ms']} ms {r['bytes']} B "
               f"{'повтор ' if r['attempts'] > 1 else ''}{r['err']}", flush=True)
 
-    rows = load_history() + results
+    prev_rows = load_history()
+    prev_rows.sort(key=lambda r: (r["t"], r["site"]))
+    notify_changes(prev_rows, results)
+
+    rows = prev_rows + results
     cutoff = now - timedelta(days=DAYS_KEEP)
     rows = [r for r in rows if parse_t(r["t"]) >= cutoff]
     rows.sort(key=lambda r: (r["t"], r["site"]))

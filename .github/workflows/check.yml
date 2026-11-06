@@ -34,6 +34,10 @@ jobs:
           python-version: "3.12"
 
       - name: Проверять сайты каждые 30 минут и коммитить результат
+        env:
+          # Settings → Secrets and variables → Actions; без них Telegram просто молчит
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           git config user.name "uptime-bot"
           git config user.email "uptime-bot@users.noreply.github.com"
