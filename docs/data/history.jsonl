@@ -194,3 +194,9 @@
 {"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 30017, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-06T19:30:01Z"}
 {"site": "fenix-siz", "state": "up", "attempts": 1, "code": 200, "ms": 1264, "bytes": 11886, "err": "", "t": "2026-11-06T19:30:01Z"}
 {"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 30401, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-06T19:30:01Z"}
+{"site": "centrfenix", "state": "up", "attempts": 1, "code": 200, "ms": 826, "bytes": 11896, "err": "", "t": "2026-11-06T20:00:01Z"}
+{"site": "check-centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 701, "bytes": 0, "err": "<urlopen error [Errno -2] Name or service not known>", "t": "2026-11-06T20:00:01Z"}
+{"site": "check-fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 30391, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-06T20:00:01Z"}
+{"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 30376, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-06T20:00:01Z"}
+{"site": "fenix-siz", "state": "slow", "attempts": 1, "code": 200, "ms": 9598, "bytes": 11886, "err": "", "t": "2026-11-06T20:00:01Z"}
+{"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 30390, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-06T20:00:01Z"}
