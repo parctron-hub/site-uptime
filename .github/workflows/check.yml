@@ -1,21 +1,31 @@
 name: Проверка доступности сайтов
 
+# Почему не простой cron "*/30": GitHub на бесплатных репозиториях запускает
+# расписание с задержкой в часы (05.11.2026 — 3 запуска за сутки вместо 48).
+# Поэтому одно задание живёт ~5 часов и само проверяет сайты каждые полчаса,
+# по границам :00 и :30, а в конце запускает следующее такое же задание.
+# Cron остался страховкой: если цепочка оборвётся, он её поднимет.
+
 on:
   schedule:
-    - cron: "*/30 * * * *"   # каждые 30 минут (UTC); GitHub может задержать на несколько минут
-  workflow_dispatch:         # кнопка «Run workflow» для ручного запуска
+    - cron: "23 */2 * * *"   # страховка раз в 2 часа (UTC), не основной запуск
+  workflow_dispatch:         # кнопка «Run workflow» и самозапуск цепочки
 
 permissions:
   contents: write
+  actions: write             # нужно для самозапуска (gh workflow run)
 
 concurrency:
   group: uptime-check
-  cancel-in-progress: false
+  cancel-in-progress: false  # второй запуск ждёт в очереди, а не рвёт текущий
+
+env:
+  ROUNDS: 10                 # проверок за одно задание: 10 × 30 мин ≈ 5 часов (лимит задания 6 ч)
 
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 345
     steps:
       - uses: actions/checkout@v4
 
@@ -23,20 +33,44 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Проверить сайты и обновить данные
-        run: python check.py
-
-      - name: Закоммитить результат
+      - name: Проверять сайты каждые 30 минут и коммитить результат
         run: |
           git config user.name "uptime-bot"
           git config user.email "uptime-bot@users.noreply.github.com"
-          git add docs/data
-          if git diff --cached --quiet; then
-            echo "изменений нет"
-          else
-            # без [skip ci]: он бы отменил и сборку GitHub Pages, табло перестало бы обновляться;
-            # петли нет — этот workflow запускается только по cron и кнопке, не по push
-            git commit -m "проверка $(date -u +'%Y-%m-%d %H:%M') UTC"
-            git pull --rebase origin main
-            git push
+          for i in $(seq 1 "$ROUNDS"); do
+            echo "=== проверка $i из $ROUNDS, $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git pull -q --rebase origin main || true
+            python check.py
+            git add docs/data
+            if git diff --cached --quiet; then
+              echo "изменений нет"
+            else
+              # без [skip ci]: он бы отменил сборку GitHub Pages, табло перестало бы обновляться;
+              # петли нет — workflow не запускается по push
+              git commit -q -m "проверка $(date -u +'%Y-%m-%d %H:%M') UTC"
+              git pull -q --rebase origin main
+              git push -q || { sleep 20; git pull -q --rebase origin main; git push -q; }
+            fi
+            if [ "$i" -lt "$ROUNDS" ]; then
+              now=$(date +%s)
+              next=$(( (now / 1800 + 1) * 1800 ))   # ближайшая граница :00 или :30
+              echo "сплю $(( next - now )) с до $(date -u -d @$next +'%H:%M') UTC"
+              sleep $(( next - now ))
+            fi
+          done
+
+      - name: Запустить следующее задание цепочки
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # защита от бесконечной тряски: если задание упало за первые 20 минут,
+          # не перезапускаем себя — следующий запуск сделает cron-страховка
+          started=$(gh run view "$GITHUB_RUN_ID" --json createdAt --jq .createdAt)
+          age=$(( $(date +%s) - $(date -d "$started" +%s) ))
+          if [ "$age" -lt 1200 ]; then
+            echo "задание прожило $age с — цепочку не продолжаю, ждём cron"
+            exit 0
           fi
+          gh workflow run check.yml --ref main
+          echo "следующее задание поставлено в очередь"

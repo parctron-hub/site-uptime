@@ -27,6 +27,9 @@ SITES = [
     {"id": "fenix-siz", "name": "fenix-siz.ru", "url": "https://fenix-siz.ru/"},
     {"id": "ncarus", "name": "ncarus.ru", "url": "https://ncarus.ru/"},
     {"id": "csb-fenix", "name": "csb-fenix.ru", "url": "https://csb-fenix.ru/"},
+    # добавлены 06.11.2026: живут на другом сервере (45.130.41.14), не на Beget
+    {"id": "check-centrfenix", "name": "check.centrfenix.ru", "url": "https://check.centrfenix.ru/"},
+    {"id": "check-fenix-siz", "name": "check.fenix-siz.ru", "url": "https://check.fenix-siz.ru/"},
 ]
 
 TIMEOUT = 30          # секунд на один запрос
