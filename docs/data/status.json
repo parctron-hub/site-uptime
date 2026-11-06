@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T20:00:01Z",
+ "generated": "2026-11-06T20:30:01Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -17,15 +17,15 @@
     "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 826,
+    "ms": 2370,
     "bytes": 11896,
     "err": "",
-    "t": "2026-11-06T20:00:01Z"
+    "t": "2026-11-06T20:30:01Z"
    },
-   "uptime_24h": 93.94,
-   "uptime_7d": 88.57,
-   "uptime_30d": 88.57,
-   "avg_ms_24h": 2223,
+   "uptime_24h": 94.12,
+   "uptime_7d": 88.89,
+   "uptime_30d": 88.89,
+   "avg_ms_24h": 2228,
    "strip": [
     [
      "2026-11-05T05:36:34Z",
@@ -271,6 +271,13 @@
      826,
      200,
      ""
+    ],
+    [
+     "2026-11-06T20:30:01Z",
+     "up",
+     2370,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -287,21 +294,21 @@
    "id": "fenix-siz",
    "name": "fenix-siz.ru",
    "url": "https://fenix-siz.ru/",
-   "state": "slow",
+   "state": "up",
    "last": {
     "site": "fenix-siz",
-    "state": "slow",
+    "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 9598,
+    "ms": 1073,
     "bytes": 11886,
     "err": "",
-    "t": "2026-11-06T20:00:01Z"
+    "t": "2026-11-06T20:30:01Z"
    },
    "uptime_24h": 100.0,
-   "uptime_7d": 94.29,
-   "uptime_30d": 94.29,
-   "avg_ms_24h": 2940,
+   "uptime_7d": 94.44,
+   "uptime_30d": 94.44,
+   "avg_ms_24h": 2885,
    "strip": [
     [
      "2026-11-05T05:36:34Z",
@@ -547,6 +554,13 @@
      9598,
      200,
      ""
+    ],
+    [
+     "2026-11-06T20:30:01Z",
+     "up",
+     1073,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -569,10 +583,10 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30390,
+    "ms": 30394,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-06T20:00:01Z"
+    "t": "2026-11-06T20:30:01Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
@@ -823,13 +837,20 @@
      30390,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-06T20:30:01Z",
+     "down",
+     30394,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-06T20:00:01Z",
-     "checks": 35,
+     "end": "2026-11-06T20:30:01Z",
+     "checks": 36,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -845,10 +866,10 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30376,
+    "ms": 30302,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-06T20:00:01Z"
+    "t": "2026-11-06T20:30:01Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
@@ -1099,13 +1120,20 @@
      30376,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-06T20:30:01Z",
+     "down",
+     30302,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-06T20:00:01Z",
-     "checks": 35,
+     "end": "2026-11-06T20:30:01Z",
+     "checks": 36,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1121,10 +1149,10 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 701,
+    "ms": 184,
     "bytes": 0,
     "err": "<urlopen error [Errno -2] Name or service not known>",
-    "t": "2026-11-06T20:00:01Z"
+    "t": "2026-11-06T20:30:01Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
@@ -1347,13 +1375,20 @@
      701,
      0,
      "<urlopen error [Errno -2] Name or service not known>"
+    ],
+    [
+     "2026-11-06T20:30:01Z",
+     "down",
+     184,
+     0,
+     "<urlopen error [Errno -2] Name or service not known>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-06T20:00:01Z",
-     "checks": 31,
+     "end": "2026-11-06T20:30:01Z",
+     "checks": 32,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1369,10 +1404,10 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30391,
+    "ms": 30375,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-06T20:00:01Z"
+    "t": "2026-11-06T20:30:01Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
@@ -1595,13 +1630,20 @@
      30391,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-06T20:30:01Z",
+     "down",
+     30375,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-06T20:00:01Z",
-     "checks": 31,
+     "end": "2026-11-06T20:30:01Z",
+     "checks": 32,
      "err": "таймаут 30 с",
      "resolved": false
     }
