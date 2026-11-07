@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T02:30:00Z",
+ "generated": "2026-11-07T03:00:00Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -11,29 +11,22 @@
    "id": "centrfenix",
    "name": "centrfenix.ru",
    "url": "https://centrfenix.ru/",
-   "state": "down",
+   "state": "up",
    "last": {
     "site": "centrfenix",
-    "state": "down",
-    "attempts": 2,
-    "code": 0,
-    "ms": 30026,
-    "bytes": 0,
-    "err": "<urlopen error [Errno 101] Network is unreachable>",
-    "t": "2026-11-07T02:30:00Z"
+    "state": "up",
+    "attempts": 1,
+    "code": 200,
+    "ms": 931,
+    "bytes": 11896,
+    "err": "",
+    "t": "2026-11-07T03:00:00Z"
    },
-   "uptime_24h": 95.65,
-   "uptime_7d": 88.0,
-   "uptime_30d": 88.0,
-   "avg_ms_24h": 1879,
+   "uptime_24h": 95.74,
+   "uptime_7d": 88.24,
+   "uptime_30d": 88.24,
+   "avg_ms_24h": 1858,
    "strip": [
-    [
-     "2026-11-05T20:54:42Z",
-     "down",
-     14881,
-     502,
-     "HTTP 502"
-    ],
     [
      "2026-11-06T01:19:11Z",
      "down",
@@ -362,6 +355,13 @@
      30026,
      0,
      "<urlopen error [Errno 101] Network is unreachable>"
+    ],
+    [
+     "2026-11-07T03:00:00Z",
+     "up",
+     931,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -370,7 +370,7 @@
      "end": "2026-11-07T02:30:00Z",
      "checks": 1,
      "err": "<urlopen error [Errno 101] Network is unreachable>",
-     "resolved": false
+     "resolved": true
     },
     {
      "start": "2026-11-06T21:00:00Z",
@@ -392,29 +392,22 @@
    "id": "fenix-siz",
    "name": "fenix-siz.ru",
    "url": "https://fenix-siz.ru/",
-   "state": "down",
+   "state": "up",
    "last": {
     "site": "fenix-siz",
-    "state": "down",
-    "attempts": 2,
-    "code": 502,
-    "ms": 15140,
-    "bytes": 585,
-    "err": "HTTP 502",
-    "t": "2026-11-07T02:30:00Z"
+    "state": "up",
+    "attempts": 1,
+    "code": 200,
+    "ms": 1198,
+    "bytes": 11886,
+    "err": "",
+    "t": "2026-11-07T03:00:00Z"
    },
-   "uptime_24h": 95.65,
-   "uptime_7d": 92.0,
-   "uptime_30d": 92.0,
-   "avg_ms_24h": 2700,
+   "uptime_24h": 95.74,
+   "uptime_7d": 92.16,
+   "uptime_30d": 92.16,
+   "avg_ms_24h": 2667,
    "strip": [
-    [
-     "2026-11-05T20:54:42Z",
-     "up",
-     1353,
-     200,
-     ""
-    ],
     [
      "2026-11-06T01:19:11Z",
      "up",
@@ -743,6 +736,13 @@
      15140,
      502,
      "HTTP 502"
+    ],
+    [
+     "2026-11-07T03:00:00Z",
+     "up",
+     1198,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -751,7 +751,7 @@
      "end": "2026-11-07T02:30:00Z",
      "checks": 1,
      "err": "HTTP 502",
-     "resolved": false
+     "resolved": true
     },
     {
      "start": "2026-11-06T21:00:00Z",
@@ -779,23 +779,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30405,
+    "ms": 30294,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-07T02:30:00Z"
+    "t": "2026-11-07T03:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-05T20:54:42Z",
-     "down",
-     30271,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-06T01:19:11Z",
      "down",
@@ -1124,13 +1117,20 @@
      30405,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-07T03:00:00Z",
+     "down",
+     30294,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-07T02:30:00Z",
-     "checks": 50,
+     "end": "2026-11-07T03:00:00Z",
+     "checks": 51,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1146,23 +1146,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30413,
+    "ms": 30404,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-07T02:30:00Z"
+    "t": "2026-11-07T03:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-05T20:54:42Z",
-     "down",
-     30285,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-06T01:19:11Z",
      "down",
@@ -1491,13 +1484,20 @@
      30413,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-07T03:00:00Z",
+     "down",
+     30404,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-07T02:30:00Z",
-     "checks": 50,
+     "end": "2026-11-07T03:00:00Z",
+     "checks": 51,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1513,10 +1513,10 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 267,
+    "ms": 30387,
     "bytes": 0,
-    "err": "<urlopen error [Errno -2] Name or service not known>",
-    "t": "2026-11-07T02:30:00Z"
+    "err": "таймаут 30 с",
+    "t": "2026-11-07T03:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
@@ -1844,13 +1844,20 @@
      267,
      0,
      "<urlopen error [Errno -2] Name or service not known>"
+    ],
+    [
+     "2026-11-07T03:00:00Z",
+     "down",
+     30387,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-07T02:30:00Z",
-     "checks": 46,
+     "end": "2026-11-07T03:00:00Z",
+     "checks": 47,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1866,10 +1873,10 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30243,
+    "ms": 30294,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-07T02:30:00Z"
+    "t": "2026-11-07T03:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
@@ -2197,13 +2204,20 @@
      30243,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-07T03:00:00Z",
+     "down",
+     30294,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-07T02:30:00Z",
-     "checks": 46,
+     "end": "2026-11-07T03:00:00Z",
+     "checks": 47,
      "err": "таймаут 30 с",
      "resolved": false
     }
