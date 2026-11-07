@@ -530,3 +530,9 @@
 {"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 30418, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-07T20:30:01Z"}
 {"site": "fenix-siz", "state": "down", "attempts": 2, "code": 502, "ms": 15010, "bytes": 585, "err": "HTTP 502", "t": "2026-11-07T20:30:01Z"}
 {"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 30391, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-07T20:30:01Z"}
+{"site": "centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 181, "bytes": 0, "err": "<urlopen error [Errno 101] Network is unreachable>", "t": "2026-11-07T21:00:00Z"}
+{"site": "check-centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 30375, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-07T21:00:00Z"}
+{"site": "check-fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 30392, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-07T21:00:00Z"}
+{"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 30407, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-07T21:00:00Z"}
+{"site": "fenix-siz", "state": "down", "attempts": 2, "code": 502, "ms": 1102, "bytes": 585, "err": "HTTP 502", "t": "2026-11-07T21:00:00Z"}
+{"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 30646, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-07T21:00:00Z"}
