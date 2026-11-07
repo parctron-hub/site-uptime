@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T02:00:00Z",
+ "generated": "2026-11-07T02:30:00Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -11,29 +11,22 @@
    "id": "centrfenix",
    "name": "centrfenix.ru",
    "url": "https://centrfenix.ru/",
-   "state": "up",
+   "state": "down",
    "last": {
     "site": "centrfenix",
-    "state": "up",
-    "attempts": 1,
-    "code": 200,
-    "ms": 936,
-    "bytes": 11896,
-    "err": "",
-    "t": "2026-11-07T02:00:00Z"
+    "state": "down",
+    "attempts": 2,
+    "code": 0,
+    "ms": 30026,
+    "bytes": 0,
+    "err": "<urlopen error [Errno 101] Network is unreachable>",
+    "t": "2026-11-07T02:30:00Z"
    },
-   "uptime_24h": 97.78,
-   "uptime_7d": 89.8,
-   "uptime_30d": 89.8,
+   "uptime_24h": 95.65,
+   "uptime_7d": 88.0,
+   "uptime_30d": 88.0,
    "avg_ms_24h": 1879,
    "strip": [
-    [
-     "2026-11-05T13:50:17Z",
-     "down",
-     15137,
-     502,
-     "HTTP 502"
-    ],
     [
      "2026-11-05T20:54:42Z",
      "down",
@@ -362,9 +355,23 @@
      936,
      200,
      ""
+    ],
+    [
+     "2026-11-07T02:30:00Z",
+     "down",
+     30026,
+     0,
+     "<urlopen error [Errno 101] Network is unreachable>"
     ]
    ],
    "incidents": [
+    {
+     "start": "2026-11-07T02:30:00Z",
+     "end": "2026-11-07T02:30:00Z",
+     "checks": 1,
+     "err": "<urlopen error [Errno 101] Network is unreachable>",
+     "resolved": false
+    },
     {
      "start": "2026-11-06T21:00:00Z",
      "end": "2026-11-06T21:00:00Z",
@@ -385,29 +392,22 @@
    "id": "fenix-siz",
    "name": "fenix-siz.ru",
    "url": "https://fenix-siz.ru/",
-   "state": "up",
+   "state": "down",
    "last": {
     "site": "fenix-siz",
-    "state": "up",
-    "attempts": 1,
-    "code": 200,
-    "ms": 1173,
-    "bytes": 11886,
-    "err": "",
-    "t": "2026-11-07T02:00:00Z"
+    "state": "down",
+    "attempts": 2,
+    "code": 502,
+    "ms": 15140,
+    "bytes": 585,
+    "err": "HTTP 502",
+    "t": "2026-11-07T02:30:00Z"
    },
-   "uptime_24h": 97.78,
-   "uptime_7d": 93.88,
-   "uptime_30d": 93.88,
+   "uptime_24h": 95.65,
+   "uptime_7d": 92.0,
+   "uptime_30d": 92.0,
    "avg_ms_24h": 2700,
    "strip": [
-    [
-     "2026-11-05T13:50:17Z",
-     "down",
-     15200,
-     502,
-     "HTTP 502"
-    ],
     [
      "2026-11-05T20:54:42Z",
      "up",
@@ -736,9 +736,23 @@
      1173,
      200,
      ""
+    ],
+    [
+     "2026-11-07T02:30:00Z",
+     "down",
+     15140,
+     502,
+     "HTTP 502"
     ]
    ],
    "incidents": [
+    {
+     "start": "2026-11-07T02:30:00Z",
+     "end": "2026-11-07T02:30:00Z",
+     "checks": 1,
+     "err": "HTTP 502",
+     "resolved": false
+    },
     {
      "start": "2026-11-06T21:00:00Z",
      "end": "2026-11-06T21:00:00Z",
@@ -765,23 +779,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30393,
+    "ms": 30405,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-07T02:00:00Z"
+    "t": "2026-11-07T02:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-05T13:50:17Z",
-     "down",
-     30020,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-05T20:54:42Z",
      "down",
@@ -1110,13 +1117,20 @@
      30393,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-07T02:30:00Z",
+     "down",
+     30405,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-07T02:00:00Z",
-     "checks": 49,
+     "end": "2026-11-07T02:30:00Z",
+     "checks": 50,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1132,23 +1146,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30385,
+    "ms": 30413,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-07T02:00:00Z"
+    "t": "2026-11-07T02:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-05T13:50:17Z",
-     "down",
-     30404,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-05T20:54:42Z",
      "down",
@@ -1477,13 +1484,20 @@
      30385,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-07T02:30:00Z",
+     "down",
+     30413,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-07T02:00:00Z",
-     "checks": 49,
+     "end": "2026-11-07T02:30:00Z",
+     "checks": 50,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1499,10 +1513,10 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 365,
+    "ms": 267,
     "bytes": 0,
     "err": "<urlopen error [Errno -2] Name or service not known>",
-    "t": "2026-11-07T02:00:00Z"
+    "t": "2026-11-07T02:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
@@ -1823,13 +1837,20 @@
      365,
      0,
      "<urlopen error [Errno -2] Name or service not known>"
+    ],
+    [
+     "2026-11-07T02:30:00Z",
+     "down",
+     267,
+     0,
+     "<urlopen error [Errno -2] Name or service not known>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-07T02:00:00Z",
-     "checks": 45,
+     "end": "2026-11-07T02:30:00Z",
+     "checks": 46,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1845,10 +1866,10 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30389,
+    "ms": 30243,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-07T02:00:00Z"
+    "t": "2026-11-07T02:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
@@ -2169,13 +2190,20 @@
      30389,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-07T02:30:00Z",
+     "down",
+     30243,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-07T02:00:00Z",
-     "checks": 45,
+     "end": "2026-11-07T02:30:00Z",
+     "checks": 46,
      "err": "таймаут 30 с",
      "resolved": false
     }
