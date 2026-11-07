@@ -560,3 +560,9 @@
 {"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 30504, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-07T23:00:00Z"}
 {"site": "fenix-siz", "state": "up", "attempts": 1, "code": 200, "ms": 2566, "bytes": 346506, "err": "", "t": "2026-11-07T23:00:00Z"}
 {"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 30292, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-07T23:00:00Z"}
+{"site": "centrfenix", "state": "up", "attempts": 1, "code": 200, "ms": 2281, "bytes": 578466, "err": "", "t": "2026-11-07T23:30:00Z"}
+{"site": "check-centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 30279, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-07T23:30:00Z"}
+{"site": "check-fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 30408, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-07T23:30:00Z"}
+{"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 30396, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-07T23:30:00Z"}
+{"site": "fenix-siz", "state": "up", "attempts": 1, "code": 200, "ms": 2841, "bytes": 346506, "err": "", "t": "2026-11-07T23:30:00Z"}
+{"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 30505, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-07T23:30:00Z"}
