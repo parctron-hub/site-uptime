@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T19:00:01Z",
+ "generated": "2026-11-08T19:30:00Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -11,29 +11,22 @@
    "id": "centrfenix",
    "name": "centrfenix.ru",
    "url": "https://centrfenix.ru/",
-   "state": "up",
+   "state": "down",
    "last": {
     "site": "centrfenix",
-    "state": "up",
-    "attempts": 1,
-    "code": 200,
-    "ms": 2120,
-    "bytes": 571894,
-    "err": "",
-    "t": "2026-11-08T19:00:01Z"
+    "state": "down",
+    "attempts": 2,
+    "code": 0,
+    "ms": 19866,
+    "bytes": 0,
+    "err": "<urlopen error [Errno 101] Network is unreachable>",
+    "t": "2026-11-08T19:30:00Z"
    },
-   "uptime_24h": 96.3,
-   "uptime_7d": 93.57,
-   "uptime_30d": 93.57,
-   "avg_ms_24h": 2551,
+   "uptime_24h": 94.44,
+   "uptime_7d": 92.91,
+   "uptime_30d": 92.91,
+   "avg_ms_24h": 2553,
    "strip": [
-    [
-     "2026-11-07T22:00:00Z",
-     "up",
-     2554,
-     200,
-     ""
-    ],
     [
      "2026-11-07T22:30:01Z",
      "up",
@@ -362,9 +355,23 @@
      2120,
      200,
      ""
+    ],
+    [
+     "2026-11-08T19:30:00Z",
+     "down",
+     19866,
+     0,
+     "<urlopen error [Errno 101] Network is unreachable>"
     ]
    ],
    "incidents": [
+    {
+     "start": "2026-11-08T19:30:00Z",
+     "end": "2026-11-08T19:30:00Z",
+     "checks": 1,
+     "err": "<urlopen error [Errno 101] Network is unreachable>",
+     "resolved": false
+    },
     {
      "start": "2026-11-07T20:30:01Z",
      "end": "2026-11-07T21:00:00Z",
@@ -406,29 +413,22 @@
    "id": "fenix-siz",
    "name": "fenix-siz.ru",
    "url": "https://fenix-siz.ru/",
-   "state": "up",
+   "state": "down",
    "last": {
     "site": "fenix-siz",
-    "state": "up",
-    "attempts": 1,
-    "code": 200,
-    "ms": 2094,
-    "bytes": 332152,
-    "err": "",
-    "t": "2026-11-08T19:00:01Z"
+    "state": "down",
+    "attempts": 2,
+    "code": 502,
+    "ms": 645,
+    "bytes": 585,
+    "err": "HTTP 502",
+    "t": "2026-11-08T19:30:00Z"
    },
-   "uptime_24h": 96.3,
-   "uptime_7d": 95.0,
-   "uptime_30d": 95.0,
-   "avg_ms_24h": 2439,
+   "uptime_24h": 94.44,
+   "uptime_7d": 94.33,
+   "uptime_30d": 94.33,
+   "avg_ms_24h": 2451,
    "strip": [
-    [
-     "2026-11-07T22:00:00Z",
-     "up",
-     1633,
-     200,
-     ""
-    ],
     [
      "2026-11-07T22:30:01Z",
      "up",
@@ -757,9 +757,23 @@
      2094,
      200,
      ""
+    ],
+    [
+     "2026-11-08T19:30:00Z",
+     "down",
+     645,
+     502,
+     "HTTP 502"
     ]
    ],
    "incidents": [
+    {
+     "start": "2026-11-08T19:30:00Z",
+     "end": "2026-11-08T19:30:00Z",
+     "checks": 1,
+     "err": "HTTP 502",
+     "resolved": false
+    },
     {
      "start": "2026-11-07T20:30:01Z",
      "end": "2026-11-07T21:00:00Z",
@@ -807,23 +821,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30544,
+    "ms": 30341,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-08T19:00:01Z"
+    "t": "2026-11-08T19:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-07T22:00:00Z",
-     "down",
-     30300,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-07T22:30:01Z",
      "down",
@@ -1152,13 +1159,20 @@
      30544,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-08T19:30:00Z",
+     "down",
+     30341,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-08T19:00:01Z",
-     "checks": 140,
+     "end": "2026-11-08T19:30:00Z",
+     "checks": 141,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1174,23 +1188,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30498,
+    "ms": 30306,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-08T19:00:01Z"
+    "t": "2026-11-08T19:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-07T22:00:00Z",
-     "down",
-     30432,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-07T22:30:01Z",
      "down",
@@ -1519,13 +1526,20 @@
      30498,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-08T19:30:00Z",
+     "down",
+     30306,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-08T19:00:01Z",
-     "checks": 140,
+     "end": "2026-11-08T19:30:00Z",
+     "checks": 141,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1541,23 +1555,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30296,
+    "ms": 30317,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-08T19:00:01Z"
+    "t": "2026-11-08T19:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-07T22:00:00Z",
-     "down",
-     30402,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-07T22:30:01Z",
      "down",
@@ -1886,13 +1893,20 @@
      30296,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-08T19:30:00Z",
+     "down",
+     30317,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-08T19:00:01Z",
-     "checks": 136,
+     "end": "2026-11-08T19:30:00Z",
+     "checks": 137,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1908,23 +1922,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30327,
+    "ms": 30266,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-08T19:00:01Z"
+    "t": "2026-11-08T19:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-07T22:00:00Z",
-     "down",
-     30570,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-07T22:30:01Z",
      "down",
@@ -2253,13 +2260,20 @@
      30327,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-08T19:30:00Z",
+     "down",
+     30266,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-08T19:00:01Z",
-     "checks": 136,
+     "end": "2026-11-08T19:30:00Z",
+     "checks": 137,
      "err": "таймаут 30 с",
      "resolved": false
     }
