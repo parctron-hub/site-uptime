@@ -1124,3 +1124,9 @@
 {"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 30036, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T17:00:00Z"}
 {"site": "fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 30699, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T17:00:00Z"}
 {"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 30221, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T17:00:00Z"}
+{"site": "centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 2835, "bytes": 0, "err": "<urlopen error [Errno -3] Temporary failure in name resolution>", "t": "2026-11-09T17:30:00Z"}
+{"site": "check-centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 31406, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T17:30:00Z"}
+{"site": "check-fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 767, "bytes": 0, "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f", "t": "2026-11-09T17:30:00Z"}
+{"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 30410, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T17:30:00Z"}
+{"site": "fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 641, "bytes": 0, "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f", "t": "2026-11-09T17:30:00Z"}
+{"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 30284, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T17:30:00Z"}
