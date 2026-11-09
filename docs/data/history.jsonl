@@ -1094,3 +1094,9 @@
 {"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 30537, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T15:00:00Z"}
 {"site": "fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 30615, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T15:00:00Z"}
 {"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 30345, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T15:00:00Z"}
+{"site": "centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 30602, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T15:30:01Z"}
+{"site": "check-centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 30250, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T15:30:01Z"}
+{"site": "check-fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 560, "bytes": 0, "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>", "t": "2026-11-09T15:30:01Z"}
+{"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 30358, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T15:30:01Z"}
+{"site": "fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 30612, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T15:30:01Z"}
+{"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 30561, "bytes": 0, "err": "таймаут 30 с", "t": "2026-11-09T15:30:01Z"}

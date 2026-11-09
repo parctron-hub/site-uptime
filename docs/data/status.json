@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T15:00:00Z",
+ "generated": "2026-11-09T15:30:01Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -17,23 +17,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30349,
+    "ms": 30602,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T15:00:00Z"
+    "t": "2026-11-09T15:30:01Z"
    },
-   "uptime_24h": 88.89,
-   "uptime_7d": 91.85,
-   "uptime_30d": 91.85,
-   "avg_ms_24h": 2298,
+   "uptime_24h": 87.04,
+   "uptime_7d": 91.35,
+   "uptime_30d": 91.35,
+   "avg_ms_24h": 2299,
    "strip": [
-    [
-     "2026-11-08T17:35:26Z",
-     "up",
-     2013,
-     200,
-     ""
-    ],
     [
      "2026-11-08T18:00:01Z",
      "up",
@@ -362,13 +355,20 @@
      30349,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T15:30:01Z",
+     "down",
+     30602,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-09T13:30:00Z",
-     "end": "2026-11-09T15:00:00Z",
-     "checks": 4,
+     "end": "2026-11-09T15:30:01Z",
+     "checks": 5,
      "err": "таймаут 30 с",
      "resolved": false
     },
@@ -426,23 +426,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30615,
+    "ms": 30612,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T15:00:00Z"
+    "t": "2026-11-09T15:30:01Z"
    },
-   "uptime_24h": 90.74,
-   "uptime_7d": 93.48,
-   "uptime_30d": 93.48,
-   "avg_ms_24h": 2228,
+   "uptime_24h": 88.89,
+   "uptime_7d": 92.97,
+   "uptime_30d": 92.97,
+   "avg_ms_24h": 2182,
    "strip": [
-    [
-     "2026-11-08T17:35:26Z",
-     "up",
-     1732,
-     200,
-     ""
-    ],
     [
      "2026-11-08T18:00:01Z",
      "up",
@@ -771,13 +764,20 @@
      30615,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T15:30:01Z",
+     "down",
+     30612,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-09T14:00:00Z",
-     "end": "2026-11-09T15:00:00Z",
-     "checks": 3,
+     "end": "2026-11-09T15:30:01Z",
+     "checks": 4,
      "err": "таймаут 30 с",
      "resolved": false
     },
@@ -835,23 +835,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30345,
+    "ms": 30561,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T15:00:00Z"
+    "t": "2026-11-09T15:30:01Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T17:35:26Z",
-     "down",
-     30327,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T18:00:01Z",
      "down",
@@ -1180,13 +1173,20 @@
      30345,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T15:30:01Z",
+     "down",
+     30561,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-09T15:00:00Z",
-     "checks": 184,
+     "end": "2026-11-09T15:30:01Z",
+     "checks": 185,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1202,23 +1202,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30537,
+    "ms": 30358,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T15:00:00Z"
+    "t": "2026-11-09T15:30:01Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T17:35:26Z",
-     "down",
-     30341,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T18:00:01Z",
      "down",
@@ -1547,13 +1540,20 @@
      30537,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T15:30:01Z",
+     "down",
+     30358,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-09T15:00:00Z",
-     "checks": 184,
+     "end": "2026-11-09T15:30:01Z",
+     "checks": 185,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1569,23 +1569,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30037,
+    "ms": 30250,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T15:00:00Z"
+    "t": "2026-11-09T15:30:01Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T17:35:26Z",
-     "down",
-     30314,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T18:00:01Z",
      "down",
@@ -1914,13 +1907,20 @@
      30037,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T15:30:01Z",
+     "down",
+     30250,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-09T15:00:00Z",
-     "checks": 180,
+     "end": "2026-11-09T15:30:01Z",
+     "checks": 181,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1936,23 +1936,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 564,
+    "ms": 560,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>",
-    "t": "2026-11-09T15:00:00Z"
+    "t": "2026-11-09T15:30:01Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T17:35:26Z",
-     "down",
-     30343,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T18:00:01Z",
      "down",
@@ -2281,13 +2274,20 @@
      564,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    ],
+    [
+     "2026-11-09T15:30:01Z",
+     "down",
+     560,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-09T15:00:00Z",
-     "checks": 180,
+     "end": "2026-11-09T15:30:01Z",
+     "checks": 181,
      "err": "таймаут 30 с",
      "resolved": false
     }
