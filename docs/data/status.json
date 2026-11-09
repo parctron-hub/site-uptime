@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T18:30:00Z",
+ "generated": "2026-11-09T19:00:00Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -17,23 +17,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 2957,
+    "ms": 2712,
     "bytes": 0,
     "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-    "t": "2026-11-09T18:30:00Z"
+    "t": "2026-11-09T19:00:00Z"
    },
-   "uptime_24h": 74.07,
-   "uptime_7d": 88.02,
-   "uptime_30d": 88.02,
-   "avg_ms_24h": 2291,
+   "uptime_24h": 72.22,
+   "uptime_7d": 87.56,
+   "uptime_30d": 87.56,
+   "avg_ms_24h": 2296,
    "strip": [
-    [
-     "2026-11-08T21:30:00Z",
-     "up",
-     1972,
-     200,
-     ""
-    ],
     [
      "2026-11-08T22:00:01Z",
      "up",
@@ -362,13 +355,20 @@
      2957,
      0,
      "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    ],
+    [
+     "2026-11-09T19:00:00Z",
+     "down",
+     2712,
+     0,
+     "<urlopen error [Errno -3] Temporary failure in name resolution>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-09T13:30:00Z",
-     "end": "2026-11-09T18:30:00Z",
-     "checks": 12,
+     "end": "2026-11-09T19:00:00Z",
+     "checks": 13,
      "err": "таймаут 30 с",
      "resolved": false
     },
@@ -420,29 +420,22 @@
    "id": "fenix-siz",
    "name": "fenix-siz.ru",
    "url": "https://fenix-siz.ru/",
-   "state": "down",
+   "state": "up",
    "last": {
     "site": "fenix-siz",
-    "state": "down",
-    "attempts": 2,
-    "code": 0,
-    "ms": 30592,
-    "bytes": 0,
-    "err": "таймаут 30 с",
-    "t": "2026-11-09T18:30:00Z"
+    "state": "up",
+    "attempts": 1,
+    "code": 200,
+    "ms": 2188,
+    "bytes": 71278,
+    "err": "",
+    "t": "2026-11-09T19:00:00Z"
    },
    "uptime_24h": 77.78,
-   "uptime_7d": 90.1,
-   "uptime_30d": 90.1,
-   "avg_ms_24h": 1929,
+   "uptime_7d": 90.16,
+   "uptime_30d": 90.16,
+   "avg_ms_24h": 1928,
    "strip": [
-    [
-     "2026-11-08T21:30:00Z",
-     "up",
-     1573,
-     200,
-     ""
-    ],
     [
      "2026-11-08T22:00:01Z",
      "up",
@@ -771,6 +764,13 @@
      30592,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T19:00:00Z",
+     "up",
+     2188,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -779,7 +779,7 @@
      "end": "2026-11-09T18:30:00Z",
      "checks": 1,
      "err": "таймаут 30 с",
-     "resolved": false
+     "resolved": true
     },
     {
      "start": "2026-11-09T14:00:00Z",
@@ -842,23 +842,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30409,
+    "ms": 30034,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T18:30:00Z"
+    "t": "2026-11-09T19:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T21:30:00Z",
-     "down",
-     30511,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T22:00:01Z",
      "down",
@@ -1187,13 +1180,20 @@
      30409,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T19:00:00Z",
+     "down",
+     30034,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-09T18:30:00Z",
-     "checks": 192,
+     "end": "2026-11-09T19:00:00Z",
+     "checks": 193,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1209,23 +1209,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30030,
+    "ms": 30411,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T18:30:00Z"
+    "t": "2026-11-09T19:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T21:30:00Z",
-     "down",
-     30262,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T22:00:01Z",
      "down",
@@ -1554,13 +1547,20 @@
      30030,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T19:00:00Z",
+     "down",
+     30411,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-09T18:30:00Z",
-     "checks": 192,
+     "end": "2026-11-09T19:00:00Z",
+     "checks": 193,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1576,23 +1576,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 2955,
+    "ms": 2809,
     "bytes": 0,
     "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-    "t": "2026-11-09T18:30:00Z"
+    "t": "2026-11-09T19:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T21:30:00Z",
-     "down",
-     30268,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T22:00:01Z",
      "down",
@@ -1921,13 +1914,20 @@
      2955,
      0,
      "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    ],
+    [
+     "2026-11-09T19:00:00Z",
+     "down",
+     2809,
+     0,
+     "<urlopen error [Errno -3] Temporary failure in name resolution>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-09T18:30:00Z",
-     "checks": 188,
+     "end": "2026-11-09T19:00:00Z",
+     "checks": 189,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1943,23 +1943,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 678,
+    "ms": 590,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>",
-    "t": "2026-11-09T18:30:00Z"
+    "t": "2026-11-09T19:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T21:30:00Z",
-     "down",
-     30243,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T22:00:01Z",
      "down",
@@ -2288,13 +2281,20 @@
      678,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    ],
+    [
+     "2026-11-09T19:00:00Z",
+     "down",
+     590,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-09T18:30:00Z",
-     "checks": 188,
+     "end": "2026-11-09T19:00:00Z",
+     "checks": 189,
      "err": "таймаут 30 с",
      "resolved": false
     }
