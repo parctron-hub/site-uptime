@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T20:00:00Z",
+ "generated": "2026-11-09T20:30:00Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -17,23 +17,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 2879,
+    "ms": 2725,
     "bytes": 0,
     "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-    "t": "2026-11-09T20:00:00Z"
+    "t": "2026-11-09T20:30:00Z"
    },
    "uptime_24h": 70.37,
-   "uptime_7d": 86.67,
-   "uptime_30d": 86.67,
+   "uptime_7d": 86.22,
+   "uptime_30d": 86.22,
    "avg_ms_24h": 2301,
    "strip": [
-    [
-     "2026-11-08T22:30:01Z",
-     "up",
-     2243,
-     200,
-     ""
-    ],
     [
      "2026-11-08T23:00:01Z",
      "up",
@@ -362,13 +355,20 @@
      2879,
      0,
      "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    ],
+    [
+     "2026-11-09T20:30:00Z",
+     "down",
+     2725,
+     0,
+     "<urlopen error [Errno -3] Temporary failure in name resolution>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-09T13:30:00Z",
-     "end": "2026-11-09T20:00:00Z",
-     "checks": 15,
+     "end": "2026-11-09T20:30:00Z",
+     "checks": 16,
      "err": "таймаут 30 с",
      "resolved": false
     },
@@ -426,23 +426,16 @@
     "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 1791,
-    "bytes": 341013,
+    "ms": 1878,
+    "bytes": 341014,
     "err": "",
-    "t": "2026-11-09T20:00:00Z"
+    "t": "2026-11-09T20:30:00Z"
    },
-   "uptime_24h": 79.63,
-   "uptime_7d": 90.26,
-   "uptime_30d": 90.26,
-   "avg_ms_24h": 1938,
+   "uptime_24h": 81.48,
+   "uptime_7d": 90.31,
+   "uptime_30d": 90.31,
+   "avg_ms_24h": 1937,
    "strip": [
-    [
-     "2026-11-08T22:30:01Z",
-     "up",
-     1686,
-     200,
-     ""
-    ],
     [
      "2026-11-08T23:00:01Z",
      "up",
@@ -771,6 +764,13 @@
      1791,
      200,
      ""
+    ],
+    [
+     "2026-11-09T20:30:00Z",
+     "up",
+     1878,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -842,23 +842,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30624,
+    "ms": 30273,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T20:00:00Z"
+    "t": "2026-11-09T20:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T22:30:01Z",
-     "down",
-     30717,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T23:00:01Z",
      "down",
@@ -1187,13 +1180,20 @@
      30624,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T20:30:00Z",
+     "down",
+     30273,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-09T20:00:00Z",
-     "checks": 195,
+     "end": "2026-11-09T20:30:00Z",
+     "checks": 196,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1209,23 +1209,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30389,
+    "ms": 30033,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T20:00:00Z"
+    "t": "2026-11-09T20:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T22:30:01Z",
-     "down",
-     30460,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T23:00:01Z",
      "down",
@@ -1554,13 +1547,20 @@
      30389,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T20:30:00Z",
+     "down",
+     30033,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-09T20:00:00Z",
-     "checks": 195,
+     "end": "2026-11-09T20:30:00Z",
+     "checks": 196,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1576,23 +1576,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 3162,
+    "ms": 2740,
     "bytes": 0,
     "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-    "t": "2026-11-09T20:00:00Z"
+    "t": "2026-11-09T20:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T22:30:01Z",
-     "down",
-     30517,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T23:00:01Z",
      "down",
@@ -1921,13 +1914,20 @@
      3162,
      0,
      "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    ],
+    [
+     "2026-11-09T20:30:00Z",
+     "down",
+     2740,
+     0,
+     "<urlopen error [Errno -3] Temporary failure in name resolution>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-09T20:00:00Z",
-     "checks": 191,
+     "end": "2026-11-09T20:30:00Z",
+     "checks": 192,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1943,23 +1943,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 300,
+    "ms": 729,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>",
-    "t": "2026-11-09T20:00:00Z"
+    "t": "2026-11-09T20:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T22:30:01Z",
-     "down",
-     30274,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T23:00:01Z",
      "down",
@@ -2288,13 +2281,20 @@
      300,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    ],
+    [
+     "2026-11-09T20:30:00Z",
+     "down",
+     729,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-09T20:00:00Z",
-     "checks": 191,
+     "end": "2026-11-09T20:30:00Z",
+     "checks": 192,
      "err": "таймаут 30 с",
      "resolved": false
     }
