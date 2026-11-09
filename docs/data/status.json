@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T16:30:01Z",
+ "generated": "2026-11-09T17:00:00Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -17,23 +17,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30887,
+    "ms": 30557,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T16:30:01Z"
+    "t": "2026-11-09T17:00:00Z"
    },
-   "uptime_24h": 81.48,
-   "uptime_7d": 89.89,
-   "uptime_30d": 89.89,
+   "uptime_24h": 80.0,
+   "uptime_7d": 89.42,
+   "uptime_30d": 89.42,
    "avg_ms_24h": 2293,
    "strip": [
-    [
-     "2026-11-08T19:30:00Z",
-     "down",
-     19866,
-     0,
-     "<urlopen error [Errno 101] Network is unreachable>"
-    ],
     [
      "2026-11-08T20:00:01Z",
      "down",
@@ -362,13 +355,20 @@
      30887,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T17:00:00Z",
+     "down",
+     30557,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-09T13:30:00Z",
-     "end": "2026-11-09T16:30:01Z",
-     "checks": 8,
+     "end": "2026-11-09T17:00:00Z",
+     "checks": 9,
      "err": "таймаут 30 с",
      "resolved": false
     },
@@ -426,23 +426,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30713,
+    "ms": 30699,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T16:30:01Z"
+    "t": "2026-11-09T17:00:00Z"
    },
-   "uptime_24h": 83.33,
-   "uptime_7d": 91.49,
-   "uptime_30d": 91.49,
+   "uptime_24h": 81.82,
+   "uptime_7d": 91.01,
+   "uptime_30d": 91.01,
    "avg_ms_24h": 2163,
    "strip": [
-    [
-     "2026-11-08T19:30:00Z",
-     "down",
-     645,
-     502,
-     "HTTP 502"
-    ],
     [
      "2026-11-08T20:00:01Z",
      "down",
@@ -771,13 +764,20 @@
      30713,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T17:00:00Z",
+     "down",
+     30699,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-09T14:00:00Z",
-     "end": "2026-11-09T16:30:01Z",
-     "checks": 7,
+     "end": "2026-11-09T17:00:00Z",
+     "checks": 8,
      "err": "таймаут 30 с",
      "resolved": false
     },
@@ -835,23 +835,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30401,
+    "ms": 30221,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T16:30:01Z"
+    "t": "2026-11-09T17:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T19:30:00Z",
-     "down",
-     30341,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T20:00:01Z",
      "down",
@@ -1180,13 +1173,20 @@
      30401,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T17:00:00Z",
+     "down",
+     30221,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-09T16:30:01Z",
-     "checks": 188,
+     "end": "2026-11-09T17:00:00Z",
+     "checks": 189,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1202,23 +1202,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30638,
+    "ms": 30036,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T16:30:01Z"
+    "t": "2026-11-09T17:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T19:30:00Z",
-     "down",
-     30306,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T20:00:01Z",
      "down",
@@ -1547,13 +1540,20 @@
      30638,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T17:00:00Z",
+     "down",
+     30036,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-09T16:30:01Z",
-     "checks": 188,
+     "end": "2026-11-09T17:00:00Z",
+     "checks": 189,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1569,23 +1569,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30380,
+    "ms": 30416,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T16:30:01Z"
+    "t": "2026-11-09T17:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T19:30:00Z",
-     "down",
-     30317,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T20:00:01Z",
      "down",
@@ -1914,13 +1907,20 @@
      30380,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T17:00:00Z",
+     "down",
+     30416,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-09T16:30:01Z",
-     "checks": 184,
+     "end": "2026-11-09T17:00:00Z",
+     "checks": 185,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1936,23 +1936,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 597,
+    "ms": 723,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>",
-    "t": "2026-11-09T16:30:01Z"
+    "t": "2026-11-09T17:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T19:30:00Z",
-     "down",
-     30266,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T20:00:01Z",
      "down",
@@ -2281,13 +2274,20 @@
      597,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    ],
+    [
+     "2026-11-09T17:00:00Z",
+     "down",
+     723,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-09T16:30:01Z",
-     "checks": 184,
+     "end": "2026-11-09T17:00:00Z",
+     "checks": 185,
      "err": "таймаут 30 с",
      "resolved": false
     }
