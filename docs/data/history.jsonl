@@ -1178,3 +1178,9 @@
 {"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 404, "bytes": 0, "err": "<urlopen error [Errno 111] Connection refused>", "t": "2026-11-09T21:00:01Z"}
 {"site": "fenix-siz", "state": "up", "attempts": 1, "code": 200, "ms": 1403, "bytes": 341014, "err": "", "t": "2026-11-09T21:00:01Z"}
 {"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 275, "bytes": 0, "err": "<urlopen error [Errno 111] Connection refused>", "t": "2026-11-09T21:00:01Z"}
+{"site": "centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 2219, "bytes": 0, "err": "<urlopen error [Errno -3] Temporary failure in name resolution>", "t": "2026-11-09T21:30:01Z"}
+{"site": "check-centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 2067, "bytes": 0, "err": "<urlopen error [Errno -3] Temporary failure in name resolution>", "t": "2026-11-09T21:30:01Z"}
+{"site": "check-fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 191, "bytes": 0, "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>", "t": "2026-11-09T21:30:01Z"}
+{"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 693, "bytes": 0, "err": "<urlopen error [Errno 111] Connection refused>", "t": "2026-11-09T21:30:01Z"}
+{"site": "fenix-siz", "state": "up", "attempts": 1, "code": 200, "ms": 1245, "bytes": 341003, "err": "", "t": "2026-11-09T21:30:01Z"}
+{"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 274, "bytes": 0, "err": "<urlopen error [Errno 111] Connection refused>", "t": "2026-11-09T21:30:01Z"}

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T21:00:01Z",
+ "generated": "2026-11-09T21:30:01Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -17,23 +17,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 2344,
+    "ms": 2219,
     "bytes": 0,
     "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-    "t": "2026-11-09T21:00:01Z"
+    "t": "2026-11-09T21:30:01Z"
    },
-   "uptime_24h": 66.67,
-   "uptime_7d": 85.35,
-   "uptime_30d": 85.35,
-   "avg_ms_24h": 2313,
+   "uptime_24h": 64.81,
+   "uptime_7d": 84.92,
+   "uptime_30d": 84.92,
+   "avg_ms_24h": 2323,
    "strip": [
-    [
-     "2026-11-09T00:00:01Z",
-     "up",
-     2418,
-     200,
-     ""
-    ],
     [
      "2026-11-09T00:30:00Z",
      "up",
@@ -362,13 +355,20 @@
      2344,
      0,
      "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    ],
+    [
+     "2026-11-09T21:30:01Z",
+     "down",
+     2219,
+     0,
+     "<urlopen error [Errno -3] Temporary failure in name resolution>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-09T13:30:00Z",
-     "end": "2026-11-09T21:00:01Z",
-     "checks": 18,
+     "end": "2026-11-09T21:30:01Z",
+     "checks": 19,
      "err": "таймаут 30 с",
      "resolved": false
     },
@@ -426,23 +426,16 @@
     "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 1403,
-    "bytes": 341014,
+    "ms": 1245,
+    "bytes": 341003,
     "err": "",
-    "t": "2026-11-09T21:00:01Z"
+    "t": "2026-11-09T21:30:01Z"
    },
    "uptime_24h": 81.48,
-   "uptime_7d": 90.4,
-   "uptime_30d": 90.4,
-   "avg_ms_24h": 1928,
+   "uptime_7d": 90.45,
+   "uptime_30d": 90.45,
+   "avg_ms_24h": 1921,
    "strip": [
-    [
-     "2026-11-09T00:00:01Z",
-     "up",
-     1615,
-     200,
-     ""
-    ],
     [
      "2026-11-09T00:30:00Z",
      "up",
@@ -771,6 +764,13 @@
      1403,
      200,
      ""
+    ],
+    [
+     "2026-11-09T21:30:01Z",
+     "up",
+     1245,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -842,23 +842,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 275,
+    "ms": 274,
     "bytes": 0,
     "err": "<urlopen error [Errno 111] Connection refused>",
-    "t": "2026-11-09T21:00:01Z"
+    "t": "2026-11-09T21:30:01Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-09T00:00:01Z",
-     "down",
-     30601,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-09T00:30:00Z",
      "down",
@@ -1187,13 +1180,20 @@
      275,
      0,
      "<urlopen error [Errno 111] Connection refused>"
+    ],
+    [
+     "2026-11-09T21:30:01Z",
+     "down",
+     274,
+     0,
+     "<urlopen error [Errno 111] Connection refused>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-09T21:00:01Z",
-     "checks": 198,
+     "end": "2026-11-09T21:30:01Z",
+     "checks": 199,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1209,23 +1209,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 404,
+    "ms": 693,
     "bytes": 0,
     "err": "<urlopen error [Errno 111] Connection refused>",
-    "t": "2026-11-09T21:00:01Z"
+    "t": "2026-11-09T21:30:01Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-09T00:00:01Z",
-     "down",
-     30379,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-09T00:30:00Z",
      "down",
@@ -1554,13 +1547,20 @@
      404,
      0,
      "<urlopen error [Errno 111] Connection refused>"
+    ],
+    [
+     "2026-11-09T21:30:01Z",
+     "down",
+     693,
+     0,
+     "<urlopen error [Errno 111] Connection refused>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-09T21:00:01Z",
-     "checks": 198,
+     "end": "2026-11-09T21:30:01Z",
+     "checks": 199,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1576,23 +1576,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 1993,
+    "ms": 2067,
     "bytes": 0,
     "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-    "t": "2026-11-09T21:00:01Z"
+    "t": "2026-11-09T21:30:01Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-09T00:00:01Z",
-     "down",
-     30022,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-09T00:30:00Z",
      "down",
@@ -1921,13 +1914,20 @@
      1993,
      0,
      "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    ],
+    [
+     "2026-11-09T21:30:01Z",
+     "down",
+     2067,
+     0,
+     "<urlopen error [Errno -3] Temporary failure in name resolution>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-09T21:00:01Z",
-     "checks": 194,
+     "end": "2026-11-09T21:30:01Z",
+     "checks": 195,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1943,23 +1943,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 192,
+    "ms": 191,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>",
-    "t": "2026-11-09T21:00:01Z"
+    "t": "2026-11-09T21:30:01Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-09T00:00:01Z",
-     "down",
-     30197,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-09T00:30:00Z",
      "down",
@@ -2288,13 +2281,20 @@
      192,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    ],
+    [
+     "2026-11-09T21:30:01Z",
+     "down",
+     191,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-09T21:00:01Z",
-     "checks": 194,
+     "end": "2026-11-09T21:30:01Z",
+     "checks": 195,
      "err": "таймаут 30 с",
      "resolved": false
     }
