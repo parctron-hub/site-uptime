@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T13:30:00Z",
+ "generated": "2026-11-09T14:00:00Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -17,23 +17,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30339,
+    "ms": 30340,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T13:30:00Z"
+    "t": "2026-11-09T14:00:00Z"
    },
-   "uptime_24h": 94.44,
-   "uptime_7d": 93.37,
-   "uptime_30d": 93.37,
-   "avg_ms_24h": 2325,
+   "uptime_24h": 92.59,
+   "uptime_7d": 92.86,
+   "uptime_30d": 92.86,
+   "avg_ms_24h": 2302,
    "strip": [
-    [
-     "2026-11-08T16:30:00Z",
-     "up",
-     2487,
-     200,
-     ""
-    ],
     [
      "2026-11-08T17:00:00Z",
      "up",
@@ -362,13 +355,20 @@
      30339,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T14:00:00Z",
+     "down",
+     30340,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-09T13:30:00Z",
-     "end": "2026-11-09T13:30:00Z",
-     "checks": 1,
+     "end": "2026-11-09T14:00:00Z",
+     "checks": 2,
      "err": "таймаут 30 с",
      "resolved": false
     },
@@ -420,29 +420,22 @@
    "id": "fenix-siz",
    "name": "fenix-siz.ru",
    "url": "https://fenix-siz.ru/",
-   "state": "up",
+   "state": "down",
    "last": {
     "site": "fenix-siz",
-    "state": "up",
-    "attempts": 1,
-    "code": 200,
-    "ms": 1691,
-    "bytes": 71278,
-    "err": "",
-    "t": "2026-11-09T13:30:00Z"
+    "state": "down",
+    "attempts": 2,
+    "code": 0,
+    "ms": 30555,
+    "bytes": 0,
+    "err": "таймаут 30 с",
+    "t": "2026-11-09T14:00:00Z"
    },
-   "uptime_24h": 96.3,
-   "uptime_7d": 95.03,
-   "uptime_30d": 95.03,
-   "avg_ms_24h": 2230,
+   "uptime_24h": 94.44,
+   "uptime_7d": 94.51,
+   "uptime_30d": 94.51,
+   "avg_ms_24h": 2236,
    "strip": [
-    [
-     "2026-11-08T16:30:00Z",
-     "up",
-     3515,
-     200,
-     ""
-    ],
     [
      "2026-11-08T17:00:00Z",
      "slow",
@@ -771,9 +764,23 @@
      1691,
      200,
      ""
+    ],
+    [
+     "2026-11-09T14:00:00Z",
+     "down",
+     30555,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
+    {
+     "start": "2026-11-09T14:00:00Z",
+     "end": "2026-11-09T14:00:00Z",
+     "checks": 1,
+     "err": "таймаут 30 с",
+     "resolved": false
+    },
     {
      "start": "2026-11-08T19:30:00Z",
      "end": "2026-11-08T20:00:01Z",
@@ -828,23 +835,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30529,
+    "ms": 30363,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T13:30:00Z"
+    "t": "2026-11-09T14:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T16:30:00Z",
-     "down",
-     30641,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T17:00:00Z",
      "down",
@@ -1173,13 +1173,20 @@
      30529,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T14:00:00Z",
+     "down",
+     30363,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-09T13:30:00Z",
-     "checks": 181,
+     "end": "2026-11-09T14:00:00Z",
+     "checks": 182,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1195,23 +1202,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30537,
+    "ms": 30342,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T13:30:00Z"
+    "t": "2026-11-09T14:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T16:30:00Z",
-     "down",
-     30282,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T17:00:00Z",
      "down",
@@ -1540,13 +1540,20 @@
      30537,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T14:00:00Z",
+     "down",
+     30342,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-09T13:30:00Z",
-     "checks": 181,
+     "end": "2026-11-09T14:00:00Z",
+     "checks": 182,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1562,23 +1569,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 30353,
+    "ms": 30336,
     "bytes": 0,
     "err": "таймаут 30 с",
-    "t": "2026-11-09T13:30:00Z"
+    "t": "2026-11-09T14:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T16:30:00Z",
-     "down",
-     30400,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T17:00:00Z",
      "down",
@@ -1907,13 +1907,20 @@
      30353,
      0,
      "таймаут 30 с"
+    ],
+    [
+     "2026-11-09T14:00:00Z",
+     "down",
+     30336,
+     0,
+     "таймаут 30 с"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-09T13:30:00Z",
-     "checks": 177,
+     "end": "2026-11-09T14:00:00Z",
+     "checks": 178,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1929,23 +1936,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 562,
+    "ms": 760,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>",
-    "t": "2026-11-09T13:30:00Z"
+    "t": "2026-11-09T14:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-08T16:30:00Z",
-     "down",
-     30407,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-08T17:00:00Z",
      "down",
@@ -2274,13 +2274,20 @@
      562,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    ],
+    [
+     "2026-11-09T14:00:00Z",
+     "down",
+     760,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-09T13:30:00Z",
-     "checks": 177,
+     "end": "2026-11-09T14:00:00Z",
+     "checks": 178,
      "err": "таймаут 30 с",
      "resolved": false
     }
