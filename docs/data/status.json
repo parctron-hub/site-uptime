@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T12:48:51Z",
+ "generated": "2026-11-10T13:00:00Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -17,23 +17,16 @@
     "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 2250,
-    "bytes": 595363,
+    "ms": 2048,
+    "bytes": 595325,
     "err": "",
-    "t": "2026-11-10T12:48:51Z"
+    "t": "2026-11-10T13:00:00Z"
    },
-   "uptime_24h": 11.63,
-   "uptime_7d": 77.93,
-   "uptime_30d": 77.93,
-   "avg_ms_24h": 2603,
+   "uptime_24h": 13.64,
+   "uptime_7d": 78.03,
+   "uptime_30d": 78.03,
+   "avg_ms_24h": 2511,
    "strip": [
-    [
-     "2026-11-09T11:00:00Z",
-     "up",
-     3035,
-     200,
-     ""
-    ],
     [
      "2026-11-09T11:30:00Z",
      "up",
@@ -362,6 +355,13 @@
      2250,
      200,
      ""
+    ],
+    [
+     "2026-11-10T13:00:00Z",
+     "up",
+     2048,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -426,23 +426,16 @@
     "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 1661,
-    "bytes": 341543,
+    "ms": 1447,
+    "bytes": 341525,
     "err": "",
-    "t": "2026-11-10T12:48:51Z"
+    "t": "2026-11-10T13:00:00Z"
    },
-   "uptime_24h": 76.74,
-   "uptime_7d": 91.44,
-   "uptime_30d": 91.44,
-   "avg_ms_24h": 1899,
+   "uptime_24h": 77.27,
+   "uptime_7d": 91.48,
+   "uptime_30d": 91.48,
+   "avg_ms_24h": 1885,
    "strip": [
-    [
-     "2026-11-09T11:00:00Z",
-     "up",
-     2102,
-     200,
-     ""
-    ],
     [
      "2026-11-09T11:30:00Z",
      "up",
@@ -771,6 +764,13 @@
      1661,
      200,
      ""
+    ],
+    [
+     "2026-11-10T13:00:00Z",
+     "up",
+     1447,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -842,23 +842,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 649,
+    "ms": 551,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-    "t": "2026-11-10T12:48:51Z"
+    "t": "2026-11-10T13:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-09T11:00:00Z",
-     "down",
-     30483,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-09T11:30:00Z",
      "down",
@@ -1187,13 +1180,20 @@
      649,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
+    ],
+    [
+     "2026-11-10T13:00:00Z",
+     "down",
+     551,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-10T12:48:51Z",
-     "checks": 222,
+     "end": "2026-11-10T13:00:00Z",
+     "checks": 223,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1209,23 +1209,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 1086,
+    "ms": 577,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-    "t": "2026-11-10T12:48:51Z"
+    "t": "2026-11-10T13:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-09T11:00:00Z",
-     "down",
-     30510,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-09T11:30:00Z",
      "down",
@@ -1554,13 +1547,20 @@
      1086,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
+    ],
+    [
+     "2026-11-10T13:00:00Z",
+     "down",
+     577,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-05T05:36:34Z",
-     "end": "2026-11-10T12:48:51Z",
-     "checks": 222,
+     "end": "2026-11-10T13:00:00Z",
+     "checks": 223,
      "err": "таймаут 30 с",
      "resolved": false
     }
@@ -1576,23 +1576,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 423,
+    "ms": 582,
     "bytes": 0,
-    "err": "<urlopen error [Errno 111] Connection refused>",
-    "t": "2026-11-10T12:48:51Z"
+    "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
+    "t": "2026-11-10T13:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-09T11:00:00Z",
-     "down",
-     30481,
-     0,
-     "таймаут 30 с"
-    ],
     [
      "2026-11-09T11:30:00Z",
      "down",
@@ -1921,13 +1914,20 @@
      423,
      0,
      "<urlopen error [Errno 111] Connection refused>"
+    ],
+    [
+     "2026-11-10T13:00:00Z",
+     "down",
+     582,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-10T12:48:51Z",
-     "checks": 218,
+     "end": "2026-11-10T13:00:00Z",
+     "checks": 219,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1943,23 +1943,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 551,
+    "ms": 538,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>",
-    "t": "2026-11-10T12:48:51Z"
+    "t": "2026-11-10T13:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-09T11:00:00Z",
-     "down",
-     661,
-     0,
-     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
-    ],
     [
      "2026-11-09T11:30:00Z",
      "down",
@@ -2288,13 +2281,20 @@
      551,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    ],
+    [
+     "2026-11-10T13:00:00Z",
+     "down",
+     538,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-10T12:48:51Z",
-     "checks": 218,
+     "end": "2026-11-10T13:00:00Z",
+     "checks": 219,
      "err": "таймаут 30 с",
      "resolved": false
     }
