@@ -1496,3 +1496,9 @@
 {"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 578, "bytes": 0, "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f", "t": "2026-11-11T02:00:00Z"}
 {"site": "fenix-siz", "state": "up", "attempts": 1, "code": 200, "ms": 2309, "bytes": 341694, "err": "", "t": "2026-11-11T02:00:00Z"}
 {"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 643, "bytes": 0, "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f", "t": "2026-11-11T02:00:00Z"}
+{"site": "centrfenix", "state": "up", "attempts": 1, "code": 200, "ms": 1742, "bytes": 605610, "err": "", "t": "2026-11-11T02:01:22Z"}
+{"site": "check-centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 523, "bytes": 0, "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f", "t": "2026-11-11T02:01:22Z"}
+{"site": "check-fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 429, "bytes": 0, "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>", "t": "2026-11-11T02:01:22Z"}
+{"site": "csb-fenix", "state": "down", "attempts": 2, "code": 0, "ms": 660, "bytes": 0, "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f", "t": "2026-11-11T02:01:22Z"}
+{"site": "fenix-siz", "state": "up", "attempts": 1, "code": 200, "ms": 1210, "bytes": 351783, "err": "", "t": "2026-11-11T02:01:22Z"}
+{"site": "ncarus", "state": "down", "attempts": 2, "code": 0, "ms": 552, "bytes": 0, "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f", "t": "2026-11-11T02:01:22Z"}
