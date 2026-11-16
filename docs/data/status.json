@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T09:30:00Z",
+ "generated": "2026-11-16T10:00:00Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -17,23 +17,16 @@
     "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 1594,
-    "bytes": 577490,
+    "ms": 2027,
+    "bytes": 577485,
     "err": "",
-    "t": "2026-11-16T09:30:00Z"
+    "t": "2026-11-16T10:00:00Z"
    },
    "uptime_24h": 100.0,
    "uptime_7d": 89.56,
-   "uptime_30d": 90.84,
-   "avg_ms_24h": 2302,
+   "uptime_30d": 90.86,
+   "avg_ms_24h": 2311,
    "strip": [
-    [
-     "2026-11-15T12:30:00Z",
-     "up",
-     1850,
-     200,
-     ""
-    ],
     [
      "2026-11-15T13:00:00Z",
      "up",
@@ -362,6 +355,13 @@
      1594,
      200,
      ""
+    ],
+    [
+     "2026-11-16T10:00:00Z",
+     "up",
+     2027,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -426,23 +426,16 @@
     "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 1899,
-    "bytes": 347593,
+    "ms": 1372,
+    "bytes": 347616,
     "err": "",
-    "t": "2026-11-16T09:30:00Z"
+    "t": "2026-11-16T10:00:00Z"
    },
    "uptime_24h": 100.0,
    "uptime_7d": 97.25,
-   "uptime_30d": 96.45,
-   "avg_ms_24h": 2814,
+   "uptime_30d": 96.46,
+   "avg_ms_24h": 2813,
    "strip": [
-    [
-     "2026-11-15T12:30:00Z",
-     "up",
-     4633,
-     200,
-     ""
-    ],
     [
      "2026-11-15T13:00:00Z",
      "up",
@@ -771,6 +764,13 @@
      1899,
      200,
      ""
+    ],
+    [
+     "2026-11-16T10:00:00Z",
+     "up",
+     1372,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -842,23 +842,16 @@
     "state": "down",
     "attempts": 2,
     "code": 500,
-    "ms": 748,
+    "ms": 716,
     "bytes": 2431,
     "err": "HTTP 500",
-    "t": "2026-11-16T09:30:00Z"
+    "t": "2026-11-16T10:00:00Z"
    },
-   "uptime_24h": 52.73,
+   "uptime_24h": 50.0,
    "uptime_7d": 64.29,
-   "uptime_30d": 43.74,
-   "avg_ms_24h": 3864,
+   "uptime_30d": 43.66,
+   "avg_ms_24h": 3777,
    "strip": [
-    [
-     "2026-11-15T12:30:00Z",
-     "up",
-     3505,
-     200,
-     ""
-    ],
     [
      "2026-11-15T13:00:00Z",
      "up",
@@ -1187,13 +1180,20 @@
      748,
      500,
      "HTTP 500"
+    ],
+    [
+     "2026-11-16T10:00:00Z",
+     "down",
+     716,
+     500,
+     "HTTP 500"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-15T22:30:00Z",
-     "end": "2026-11-16T09:30:00Z",
-     "checks": 26,
+     "end": "2026-11-16T10:00:00Z",
+     "checks": 27,
      "err": "HTTP 500",
      "resolved": false
     },
@@ -1210,29 +1210,22 @@
    "id": "csb-fenix",
    "name": "csb-fenix.ru",
    "url": "https://csb-fenix.ru/",
-   "state": "slow",
+   "state": "up",
    "last": {
     "site": "csb-fenix",
-    "state": "slow",
+    "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 5842,
+    "ms": 3717,
     "bytes": 770335,
     "err": "",
-    "t": "2026-11-16T09:30:00Z"
+    "t": "2026-11-16T10:00:00Z"
    },
    "uptime_24h": 100.0,
-   "uptime_7d": 25.0,
-   "uptime_30d": 17.01,
-   "avg_ms_24h": 3887,
+   "uptime_7d": 25.27,
+   "uptime_30d": 17.16,
+   "avg_ms_24h": 3890,
    "strip": [
-    [
-     "2026-11-15T12:30:00Z",
-     "up",
-     3791,
-     200,
-     ""
-    ],
     [
      "2026-11-15T13:00:00Z",
      "up",
@@ -1561,6 +1554,13 @@
      5842,
      200,
      ""
+    ],
+    [
+     "2026-11-16T10:00:00Z",
+     "up",
+     3717,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -1583,23 +1583,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 675,
+    "ms": 624,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-    "t": "2026-11-16T09:30:00Z"
+    "t": "2026-11-16T10:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-15T12:30:00Z",
-     "down",
-     514,
-     0,
-     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
-    ],
     [
      "2026-11-15T13:00:00Z",
      "down",
@@ -1928,13 +1921,20 @@
      675,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
+    ],
+    [
+     "2026-11-16T10:00:00Z",
+     "down",
+     624,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-16T09:30:00Z",
-     "checks": 531,
+     "end": "2026-11-16T10:00:00Z",
+     "checks": 532,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1950,23 +1950,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 453,
+    "ms": 553,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>",
-    "t": "2026-11-16T09:30:00Z"
+    "t": "2026-11-16T10:00:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-15T12:30:00Z",
-     "down",
-     614,
-     0,
-     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
-    ],
     [
      "2026-11-15T13:00:00Z",
      "down",
@@ -2295,13 +2288,20 @@
      453,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
+    ],
+    [
+     "2026-11-16T10:00:00Z",
+     "down",
+     553,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-16T09:30:00Z",
-     "checks": 531,
+     "end": "2026-11-16T10:00:00Z",
+     "checks": 532,
      "err": "таймаут 30 с",
      "resolved": false
     }
