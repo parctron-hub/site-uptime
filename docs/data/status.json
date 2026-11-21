@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T09:30:01Z",
+ "generated": "2026-11-21T09:30:59Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -17,23 +17,16 @@
     "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 1694,
-    "bytes": 583930,
+    "ms": 1481,
+    "bytes": 583957,
     "err": "",
-    "t": "2026-11-21T09:30:01Z"
+    "t": "2026-11-21T09:30:59Z"
    },
-   "uptime_24h": 98.11,
+   "uptime_24h": 98.15,
    "uptime_7d": 99.73,
-   "uptime_30d": 93.76,
-   "avg_ms_24h": 3027,
+   "uptime_30d": 93.77,
+   "avg_ms_24h": 2998,
    "strip": [
-    [
-     "2026-11-20T12:00:00Z",
-     "up",
-     1758,
-     200,
-     ""
-    ],
     [
      "2026-11-20T12:30:01Z",
      "up",
@@ -362,6 +355,13 @@
      1694,
      200,
      ""
+    ],
+    [
+     "2026-11-21T09:30:59Z",
+     "up",
+     1481,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -427,29 +427,22 @@
    "id": "fenix-siz",
    "name": "fenix-siz.ru",
    "url": "https://fenix-siz.ru/",
-   "state": "slow",
+   "state": "up",
    "last": {
     "site": "fenix-siz",
-    "state": "slow",
+    "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 7002,
-    "bytes": 347163,
+    "ms": 1861,
+    "bytes": 347181,
     "err": "",
-    "t": "2026-11-21T09:30:01Z"
+    "t": "2026-11-21T09:30:59Z"
    },
    "uptime_24h": 100.0,
    "uptime_7d": 100.0,
    "uptime_30d": 97.63,
-   "avg_ms_24h": 3927,
+   "avg_ms_24h": 3889,
    "strip": [
-    [
-     "2026-11-20T12:00:00Z",
-     "up",
-     3397,
-     200,
-     ""
-    ],
     [
      "2026-11-20T12:30:01Z",
      "up",
@@ -778,6 +771,13 @@
      7002,
      200,
      ""
+    ],
+    [
+     "2026-11-21T09:30:59Z",
+     "up",
+     1861,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -849,23 +849,16 @@
     "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 3312,
+    "ms": 3504,
     "bytes": 867943,
     "err": "",
-    "t": "2026-11-21T09:30:01Z"
+    "t": "2026-11-21T09:30:59Z"
    },
    "uptime_24h": 100.0,
    "uptime_7d": 91.18,
-   "uptime_30d": 61.55,
-   "avg_ms_24h": 3826,
+   "uptime_30d": 61.6,
+   "avg_ms_24h": 3820,
    "strip": [
-    [
-     "2026-11-20T12:00:00Z",
-     "slow",
-     8150,
-     200,
-     ""
-    ],
     [
      "2026-11-20T12:30:01Z",
      "up",
@@ -1194,6 +1187,13 @@
      3312,
      200,
      ""
+    ],
+    [
+     "2026-11-21T09:30:59Z",
+     "up",
+     3504,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -1217,29 +1217,22 @@
    "id": "csb-fenix",
    "name": "csb-fenix.ru",
    "url": "https://csb-fenix.ru/",
-   "state": "up",
+   "state": "slow",
    "last": {
     "site": "csb-fenix",
-    "state": "up",
+    "state": "slow",
     "attempts": 1,
     "code": 200,
-    "ms": 3559,
-    "bytes": 770399,
+    "ms": 7491,
+    "bytes": 770335,
     "err": "",
-    "t": "2026-11-21T09:30:01Z"
+    "t": "2026-11-21T09:30:59Z"
    },
    "uptime_24h": 100.0,
-   "uptime_7d": 95.19,
-   "uptime_30d": 44.44,
-   "avg_ms_24h": 4702,
+   "uptime_7d": 95.45,
+   "uptime_30d": 44.51,
+   "avg_ms_24h": 4753,
    "strip": [
-    [
-     "2026-11-20T12:00:00Z",
-     "up",
-     4535,
-     200,
-     ""
-    ],
     [
      "2026-11-20T12:30:01Z",
      "slow",
@@ -1568,6 +1561,13 @@
      3559,
      200,
      ""
+    ],
+    [
+     "2026-11-21T09:30:59Z",
+     "slow",
+     7491,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -1597,23 +1597,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 474,
+    "ms": 372,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-    "t": "2026-11-21T09:30:01Z"
+    "t": "2026-11-21T09:30:59Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-20T12:00:00Z",
-     "down",
-     621,
-     0,
-     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
-    ],
     [
      "2026-11-20T12:30:01Z",
      "down",
@@ -1942,13 +1935,20 @@
      474,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
+    ],
+    [
+     "2026-11-21T09:30:59Z",
+     "down",
+     372,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-21T09:30:01Z",
-     "checks": 797,
+     "end": "2026-11-21T09:30:59Z",
+     "checks": 798,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1964,23 +1964,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 627,
+    "ms": 579,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-    "t": "2026-11-21T09:30:01Z"
+    "t": "2026-11-21T09:30:59Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-20T12:00:00Z",
-     "down",
-     613,
-     0,
-     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
-    ],
     [
      "2026-11-20T12:30:01Z",
      "down",
@@ -2309,13 +2302,20 @@
      627,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
+    ],
+    [
+     "2026-11-21T09:30:59Z",
+     "down",
+     579,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-21T09:30:01Z",
-     "checks": 797,
+     "end": "2026-11-21T09:30:59Z",
+     "checks": 798,
      "err": "таймаут 30 с",
      "resolved": false
     }
