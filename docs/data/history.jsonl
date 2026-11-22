@@ -5282,3 +5282,9 @@
 {"site": "csb-fenix", "state": "up", "attempts": 1, "code": 200, "ms": 4397, "bytes": 770335, "err": "", "t": "2026-11-22T21:30:58Z"}
 {"site": "fenix-siz", "state": "up", "attempts": 1, "code": 200, "ms": 1484, "bytes": 347173, "err": "", "t": "2026-11-22T21:30:58Z"}
 {"site": "ncarus", "state": "up", "attempts": 1, "code": 200, "ms": 3170, "bytes": 867943, "err": "", "t": "2026-11-22T21:30:58Z"}
+{"site": "centrfenix", "state": "up", "attempts": 1, "code": 200, "ms": 1906, "bytes": 583922, "err": "", "t": "2026-11-22T22:00:01Z"}
+{"site": "check-centrfenix", "state": "down", "attempts": 2, "code": 0, "ms": 654, "bytes": 0, "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f", "t": "2026-11-22T22:00:01Z"}
+{"site": "check-fenix-siz", "state": "down", "attempts": 2, "code": 0, "ms": 450, "bytes": 0, "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f", "t": "2026-11-22T22:00:01Z"}
+{"site": "csb-fenix", "state": "up", "attempts": 1, "code": 200, "ms": 3487, "bytes": 770335, "err": "", "t": "2026-11-22T22:00:01Z"}
+{"site": "fenix-siz", "state": "up", "attempts": 1, "code": 200, "ms": 1493, "bytes": 347173, "err": "", "t": "2026-11-22T22:00:01Z"}
+{"site": "ncarus", "state": "up", "attempts": 1, "code": 200, "ms": 3150, "bytes": 867943, "err": "", "t": "2026-11-22T22:00:01Z"}
