@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T22:00:01Z",
+ "generated": "2026-11-22T22:30:00Z",
  "interval_min": 30,
  "rules": {
   "min_bytes": 5000,
@@ -17,23 +17,16 @@
     "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 1906,
-    "bytes": 583922,
+    "ms": 1521,
+    "bytes": 583957,
     "err": "",
-    "t": "2026-11-22T22:00:01Z"
+    "t": "2026-11-22T22:30:00Z"
    },
    "uptime_24h": 100.0,
    "uptime_7d": 99.73,
    "uptime_30d": 94.34,
-   "avg_ms_24h": 2793,
+   "avg_ms_24h": 2770,
    "strip": [
-    [
-     "2026-11-22T01:00:00Z",
-     "up",
-     1609,
-     200,
-     ""
-    ],
     [
      "2026-11-22T01:30:00Z",
      "up",
@@ -362,6 +355,13 @@
      1906,
      200,
      ""
+    ],
+    [
+     "2026-11-22T22:30:00Z",
+     "up",
+     1521,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -433,23 +433,16 @@
     "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 1493,
-    "bytes": 347173,
+    "ms": 1378,
+    "bytes": 347181,
     "err": "",
-    "t": "2026-11-22T22:00:01Z"
+    "t": "2026-11-22T22:30:00Z"
    },
    "uptime_24h": 100.0,
    "uptime_7d": 100.0,
    "uptime_30d": 97.85,
-   "avg_ms_24h": 3220,
+   "avg_ms_24h": 3186,
    "strip": [
-    [
-     "2026-11-22T01:00:00Z",
-     "up",
-     1648,
-     200,
-     ""
-    ],
     [
      "2026-11-22T01:30:00Z",
      "up",
@@ -778,6 +771,13 @@
      1493,
      200,
      ""
+    ],
+    [
+     "2026-11-22T22:30:00Z",
+     "up",
+     1378,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -849,23 +849,16 @@
     "state": "up",
     "attempts": 1,
     "code": 200,
-    "ms": 3150,
+    "ms": 3174,
     "bytes": 867943,
     "err": "",
-    "t": "2026-11-22T22:00:01Z"
+    "t": "2026-11-22T22:30:00Z"
    },
-   "uptime_24h": 98.15,
-   "uptime_7d": 90.91,
-   "uptime_30d": 65.01,
-   "avg_ms_24h": 4605,
+   "uptime_24h": 98.18,
+   "uptime_7d": 90.93,
+   "uptime_30d": 65.05,
+   "avg_ms_24h": 4579,
    "strip": [
-    [
-     "2026-11-22T01:00:00Z",
-     "up",
-     3465,
-     200,
-     ""
-    ],
     [
      "2026-11-22T01:30:00Z",
      "up",
@@ -1194,6 +1187,13 @@
      3150,
      200,
      ""
+    ],
+    [
+     "2026-11-22T22:30:00Z",
+     "up",
+     3174,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -1224,29 +1224,22 @@
    "id": "csb-fenix",
    "name": "csb-fenix.ru",
    "url": "https://csb-fenix.ru/",
-   "state": "up",
+   "state": "slow",
    "last": {
     "site": "csb-fenix",
-    "state": "up",
+    "state": "slow",
     "attempts": 1,
     "code": 200,
-    "ms": 3487,
+    "ms": 8356,
     "bytes": 770335,
     "err": "",
-    "t": "2026-11-22T22:00:01Z"
+    "t": "2026-11-22T22:30:00Z"
    },
    "uptime_24h": 100.0,
    "uptime_7d": 99.73,
-   "uptime_30d": 49.6,
-   "avg_ms_24h": 5006,
+   "uptime_30d": 49.66,
+   "avg_ms_24h": 5067,
    "strip": [
-    [
-     "2026-11-22T01:00:00Z",
-     "up",
-     3957,
-     200,
-     ""
-    ],
     [
      "2026-11-22T01:30:00Z",
      "up",
@@ -1575,6 +1568,13 @@
      3487,
      200,
      ""
+    ],
+    [
+     "2026-11-22T22:30:00Z",
+     "slow",
+     8356,
+     200,
+     ""
     ]
    ],
    "incidents": [
@@ -1604,23 +1604,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 654,
+    "ms": 627,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-    "t": "2026-11-22T22:00:01Z"
+    "t": "2026-11-22T22:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-22T01:00:00Z",
-     "down",
-     725,
-     0,
-     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
-    ],
     [
      "2026-11-22T01:30:00Z",
      "down",
@@ -1949,13 +1942,20 @@
      654,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
+    ],
+    [
+     "2026-11-22T22:30:00Z",
+     "down",
+     627,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-22T22:00:01Z",
-     "checks": 879,
+     "end": "2026-11-22T22:30:00Z",
+     "checks": 880,
      "err": "<urlopen error [Errno -2] Name or service not known>",
      "resolved": false
     }
@@ -1971,23 +1971,16 @@
     "state": "down",
     "attempts": 2,
     "code": 0,
-    "ms": 450,
+    "ms": 552,
     "bytes": 0,
     "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-    "t": "2026-11-22T22:00:01Z"
+    "t": "2026-11-22T22:30:00Z"
    },
    "uptime_24h": 0.0,
    "uptime_7d": 0.0,
    "uptime_30d": 0.0,
    "avg_ms_24h": null,
    "strip": [
-    [
-     "2026-11-22T01:00:00Z",
-     "down",
-     614,
-     0,
-     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
-    ],
     [
      "2026-11-22T01:30:00Z",
      "down",
@@ -2316,13 +2309,20 @@
      450,
      0,
      "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
+    ],
+    [
+     "2026-11-22T22:30:00Z",
+     "down",
+     552,
+     0,
+     "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f"
     ]
    ],
    "incidents": [
     {
      "start": "2026-11-06T06:50:35Z",
-     "end": "2026-11-22T22:00:01Z",
-     "checks": 879,
+     "end": "2026-11-22T22:30:00Z",
+     "checks": 880,
      "err": "таймаут 30 с",
      "resolved": false
     }
